@@ -1,0 +1,16 @@
+version: "3.0"
+rules:
+  - rule: Respond to greetings
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Respond to goodbyes
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Mobile banking query
+    steps:
+      - intent: query_mobile_banking
+      - action: action_mobile_banking_response

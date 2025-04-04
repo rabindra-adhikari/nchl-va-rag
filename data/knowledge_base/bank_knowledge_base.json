@@ -1,0 +1,307 @@
+[
+    {
+        "question": "What is mobile banking / Siddhartha BankSmart XP? Why should I apply fot it?",
+        "answer": "Siddhartha BankSmart XP is a convenient and safe mobile banking service offered by Siddhartha Bank by the help of which you can get instant access to your accounts.",
+        "tag": "service_overview"
+    },
+    {
+        "question": "What are the various features of mobile banking / Siddhartha BankSmart XP?",
+        "answer": "Siddhartha BankSmart XP offers a variety of services and other value added features will be incorporated in coming days. Some of the existing features are:\n- Inquiries related to available balance, account statement, transaction history, interest rate, forex rate, transaction limit.\n- Service requests like cheque book, fixed deposit and cardless withdrawal.\n- Financial transactions like top ups, fund transfer, utility payment, merchant payment, third party payment\n- Loan, Fixed Deposit and credit card details\n- Customer enquiries via Helpdesk, Book an Appointment, Profile check, registration of interest of customer in the Bank’s products.\n- ATM and Branch Locations",
+        "tag": "service_features"
+    },
+    {
+        "question": "How can I register/activate the mobile banking / Siddhartha BankSmart XP service?",
+        "answer": "If you are an account holder of the Bank, you can register for BankSmart XP by visiting your nearest branch. Once you are registered, you will get an SMS alert of successful registration. For activation, you need to download the BankSmart XP app from Play store or App store. Click on “Register/Activate”, accept terms & conditions, enter your mobile number, accept the SMS charges, and activation code will be generated. Once you are redirected to native SMS app, click on send for completing the activation process (Make sure to use the same mobile number which was registered in the Bank). Get back to the application and enter the OTP. On validation of OTP, enter your account number, follow the guided steps to set login Password, transaction PIN, security question, email ID and start using the application.\nNote: The process will be different for customer residing abroad.\nYou need to visit the nearest Siddhartha Bank’s agent. Once your user is created by agent, you need to download the BankSmart XP app from Play store or App Store. Click on “Register/Activate”, accept terms and conditions, enter your mobile number. You will get OTP on your registered email ID. Using the OTP, you can set your login Password and transaction PIN, security question and start using the application.",
+        "tag": "registration_activation"
+    },
+    {
+        "question": "Can I subscribe mobile banking / Siddhartha BankSmart XP without visiting branch?",
+        "answer": "Yes, self-registration is possible without visiting branch. For that, download the application from Play store or App store, click on “Register/Activate” and follow the steps mentioned in point no. 3. Make sure to register with the same mobile number which was provided during account opening.\nHowever, with self-registration you will be provided with minimal payment limit. If you wish to enable full financial role, you need to visit your nearest branch and fill the required form.",
+        "tag": "self_subscription"
+    },
+    {
+        "question": "Can a non-account holder subscribe mobile banking / Siddhartha BankSmart XP?",
+        "answer": "Yes, non-account holders can also subscribe to Siddhartha BankSmart XP where other than account related services can be enjoyed. Non-account holders can directly download the application from the Play store or App store and can self-register. Mobile number entered by you will be recorded as non-account holder, and you will be registered accordingly. When the non-account holder turned to account holder in future, the customer can link the account to BankSmart XP and can have access to the account related services as well. You need to visit your nearest branch to convert non-account holder to account holder user.",
+        "tag": "non_account_registration"
+    },
+    {
+        "question": "From which channels can mobile banking / Siddhartha BankSmart XP be used?",
+        "answer": "Siddhartha BankSmart XP can be used from two channels; via Mobile application and Web. For mobile application, download the application from Play store or App store:\nIOS: https://apps.apple.com/np/app/siddharthabanksmartxp/id1161312612\nAndroid: https://play.google.com/store/apps/details?id=com.f1soft.banksmart.siddhartha\nand for web, follow the link: https://banksmartxp.siddharthabank.com/",
+        "tag": "access_channels"
+    },
+    {
+        "question": "What mode does mobile banking / Siddhartha BankSmart XP support in Mobile application?",
+        "answer": "Siddhartha BankSmart XP supports both SMS and GPRS mode. In case of SMS mode, an SMS will be pushed for every request and response will also be delivered in SMS itself. For GPRS mode, the request will be executed via internet using ion WiFi, GPRS/3G/4G.",
+        "tag": "communication_modes"
+    },
+    {
+        "question": "Can I use mobile banking / Siddhartha BankSmart XP from abroad?",
+        "answer": "Web channel (https://banksmartxp.siddharthabank.com/) and GPRS mode in the application can be used from anywhere around the world.",
+        "tag": "international_access"
+    },
+    {
+        "question": "What to do if I forgot Password/PIN of mobile banking / Siddhartha BankSmart XP?",
+        "answer": "If you forgot your password, click on “Forgot Password” button in the login page. Accept the applicable charges, enter your mobile number, accept the SMS charges, and an activation code will be generated. You will be redirected to native SMS app and send that message for verification (Make sure to use the same mobile number which was registered earlier). Once the code is validated, OTP will be received in the mobile number. Enter the OTP and submit, once it is validated, enter your account number, answer the security questions set by you while/after registration/activation. On verification of security questions and answers, you can set new log-in Password and transaction PIN. Alternatively, you can request for forgot password/pin visiting your nearest branch or agent (for international customer).",
+        "tag": "password_pin_reset"
+    },
+    {
+        "question": "Can I do activation, self-registration, Password/PIN reset from Web?",
+        "answer": "No, you can’t. Activation, self-registration, Password/PIN reset can only be done using mobile application.",
+        "tag": "web_limitations"
+    },
+    {
+        "question": "What is the difference between login Password and Transaction PIN?",
+        "answer": "Login Password is the password to login with GPRS Mode. Upon login if you wish to execute any financial service such as Fund Transfer, TopUps etc, you need to use your transaction PIN for completing the transaction in GPRS Mode. Likewise, if you are using SMS mode, you need to input transaction PIN for every request. However, if you are using Web, login Password is used to login the application and to perform the transaction thereafter, you will receive OTP in your registered mobile number and email ID.",
+        "tag": "authentication_differences"
+    },
+    {
+        "question": "Can I use mobile banking / Siddhartha BankSmart XP using mobile number other than the registered one?",
+        "answer": "No, you cannot do it in SMS mode but it is possible in GPRS mode. However, you are highly recommended to update your mobile number immediately visiting the nearest branch.",
+        "tag": "mobile_number_update"
+    },
+    {
+        "question": "What should I do if I need to change my Mobile device?",
+        "answer": "If you try to login with new mobile device, mobile application will request to authorize the new device. As you authorize new device, verification code will be generated. You will be redirected to native SMS app and send that message for verification (Make sure to use the same mobile number which was registered earlier). Once code is validated, OTP will be received in mobile number. You need to enter the OTP received and upon validation of the OTP, your new device id will be stored and you will be able to use the BankSmart XP from your new device.",
+        "tag": "device_change"
+    },
+    {
+        "question": "What should I do if any transaction performed in mobile banking / Siddhartha BankSmart XP is not successful but balance has been debited/deducted?",
+        "answer": "Go to statement after login and click on 3 dotted line (…) of the disputed transaction and raise the dispute selecting the appropriate fields/values. Your dispute will be handled by our customer care team.",
+        "tag": "transaction_dispute"
+    },
+    {
+        "question": "I am a registered user but when I request through SMS mode it gives an error message as unregisteres user, why?",
+        "answer": "Usually, the error message is generated if you are using a DUAL SIM mobile. In case of dual SIM mobile, Siddhartha BankSmart XP sends message from your default SIM. Hence, you need to change your default SIM with the registered number in BankSmart XP. If you are not able to set the default SIM from setting of your mobile, then either change the slot of the SIMs or visit your nearest branch to change the registered mobile number to another.",
+        "tag": "dual_sim_issue"
+    },
+    {
+        "question": "How to identify if I have financial role to perform transaction in mobile banking / BankSmart XP or not?",
+        "answer": "To know if you have financial role to perform the transaction, go to “My Profile” page, you will be able to see your profile in top of the page itself.",
+        "tag": "financial_role"
+    },
+    {
+        "question": "What is the annual charge for mobile banking / Siddhartha BankSmart XP?",
+        "answer": "The annual subscription charge is mentioned in the STC of the Bank which can be reached in the Bank’s website.",
+        "tag": "annual_charge"
+    },
+    {
+        "question": "What should I do if I get stuck or have problem to use mobile banking / BankSmart XP?",
+        "answer": "If you are stuck at any point, call the representative of Siddhartha Care at 01-5970020. Alternatively, you can reach us via email customercare@sbl.com.np or through Helpdesk (https://www.siddharthabank.com/helpdesk).",
+        "tag": "customer_support"
+    },
+    {
+        "question": "What is cardless withdrawl service?",
+        "answer": "Cardless Withdrawal is a banking sevice that allows customers to withdraw cash from their accounts without using a physical debit card. Instead of a card, the customer can initatiate a cash withdrawal using their mobile device or an ATM machine by entering OTP.",
+        "tag": "cardless_withdrawal"
+    },
+    {
+        "question": "What is the detailed process of using Cardless Withdrawl?",
+        "answer": "1. Please login into Banksmart XP and select menu \"Cardless Withdrawal\" under menu \"Payment\" or search \"Cardless Withdrawal\" from search option in Main page.\n2. Please select the amount from dropdown and click \"Proceed\".\n3. Please enter the transaction PIN, upon authentication.\n4. An OTP will be sent via SMS which will expire in 5 Minutes.\n5. Please select option \"Cardless\" from the SBL ATM screen for further processing.\n6. ATM will ask for your “Mobile number”. Enter the same mobile number which is registered in BankSmart XP.\n7. Upon validation of Mobile Number ATM will ask for “OTP”.\n8. Please input the “OTP” received via SMS.\n9. Upon validation of “OTP”, ATM will ask for Amount,\n10. Please input the same amount for which cardless withdrawal was requested through Banksmart XP.\n11. Upon validation, customer account will be debited and ATM will dispense the cash.",
+        "tag": "cardless_withdrawal_process"
+    },
+    {
+        "question": "What is a Cash Deposit Machine?",
+        "answer": "A Cash Deposit Machine (CDM) is an electronic device that enables users to deposit cash into their Bank accounts without having to interact with the Bank Teller. The machine accepts cash for denominations of NPR 1,000 and NPR 500 only. The machine will count cash automatically and identify any counterfeit and damaged notes without any manual intervention. The deposited funds are then credited to the User's bank account in real-time.",
+        "tag": "cdm_definition"
+    },
+    {
+        "question": "What is the detailed process of using Cash Deposit Machine?",
+        "answer": "1. Select the \"Deposit\" option on the Cash Deposit screen to start the deposit process.\n2. Cash Deposit Machine (CDM) will request for Mobile Number of cash depositor for authentication where an OTP will be sent to provide mobile number.\n3. Please Input 6-digit OTP received in SMS and upon successful OT validation and input the Depositing account number and press \"Continue\" option.\n4. CDM will display the account details in screen and please verify the account details and press \"Continue\" option for further processing. The deposit cash should not exceed NPR 99,500 at one time.\n5. Place the cash in the hopper, CDM will count notes to hold in stack and display the amount for those notes which can be accepted for deposit. However, notes that are Counterfeit, Damaged and Folded will be presented back immediately.\n6. Counterfeit and Damaged will never be accepted for deposit however for Folded notes, please unfold the notes and reattempt to deposit by pressing “Continue\" option. CDM will recheck those notes and display the final count in screen.\n7. Please press \"Confirm\" option if the displayed amount is correct.\n8. CDM will generate and present a slip to which contains information regarding Failed/Success Status, Note Counts, Deposited Amount and Unique ID number.\n9. In case CDM is not able to execute accounting entry for deposit due to various dependencies like Network, API Breakage, CBS Down etc. please contact the Bank’s staff.",
+        "tag": "cdm_process"
+    },
+    {
+        "question": "What is SBL Debit Card?",
+        "answer": "SBL Debit Card is a plastic card which has access to the bank account at any time. SBL Visa Debit Card can be used in merchant locations that have Point-of-Sale (POS) Terminals for purchases and Automated Teller Machines (ATMs) to withdraw cash. The card is authenticated by PIN (Personal Identification Number).",
+        "tag": "debit_card_overview"
+    },
+    {
+        "question": "What are the benefits of having a debit card?",
+        "answer": "Debit card enables to make payment at any merchant locations e.g. groceries, restaurants, departmental stores, super markets, hospitals besides withdrawal of cash, balance inquiry and attaining mini statement using ATMs.",
+        "tag": "debit_card_benefits"
+    },
+    {
+        "question": "How much do I have to pay for SBL Visa Debit Card?",
+        "answer": "You have two options to make payment of SBL Visa Debit Card fee. Either you can pay Rs. 400 per year or you can pay Rs.1,600 upfront for five years.",
+        "tag": "debit_card_fee"
+    },
+    {
+        "question": "Can I link two or more accounts with the same debit card?",
+        "answer": "Yes you can. You will be provided with option to choose account while withdrawing cash from SBL ATM. But default account will be selected while performing fast cash, cash withdrawal from ATM not belonging to Siddhartha Bank and POS purchase transactions.",
+        "tag": "debit_card_linking"
+    },
+    {
+        "question": "Can I use my SBL Debit Card for online purchases?",
+        "answer": "Yes, you can use your SBL Visa Debit Card for online purchases.",
+        "tag": "debit_online_usage"
+    },
+    {
+        "question": "If I try to withdraw cash from SBL ATM and the machine did not dispense cash whereas my account has been debited. In such case what should I do to get my money back?",
+        "answer": "Please register a written complaint to your nearest branch with the following details:\n- Card No.\n- Account No.\n- Name\n- Transaction amount\n- Transaction date\n- Transaction no. (Retrieval Reference No.) – Optional\n- Bank Name – Optional\n- ATM ID – Optional\n- Transaction slips receipt from the ATM – Optional\nWe will reimburse the amount to your account after verification of your claim. It will take about 3 working days if it is the case of withdrawal from SBL ATM. If it is the case of withdrawal from other bank’s ATM, it will take at least 45 days.",
+        "tag": "atm_cash_issue"
+    },
+    {
+        "question": "What is SBL Credit Card?",
+        "answer": "SBL Credit Card is the plastic card issued as a loan to the customer with pre-defined credit limit. Credit card is considered as a handy financial tool to manage short term credit requirement conveniently. It is based on the concept of buy now and pay later. SBL Credit card provides revolving credit facility to the card holder.",
+        "tag": "credit_card_overview"
+    },
+    {
+        "question": "Who can apply for the SBL Credit Card?",
+        "answer": "Credit card can be applied by any customer who has regular source of income.",
+        "tag": "credit_card_applicant"
+    },
+    {
+        "question": "How do I apply for SBL Credit Card?",
+        "answer": "Application forms are available at all SBL branches. You will have to fill up the application form and submit the KYC and other required documents and proof of regular income source. Or you can apply for credit card online.",
+        "tag": "credit_card_application"
+    },
+    {
+        "question": "How long does it take to avail the Credit Card once the application has been submitted to the respective branch?",
+        "answer": "If approved, it takes 7 working days within Kathmandu Valley and 10 working days outside valley after application has been submitted with all required documents.",
+        "tag": "credit_card_timeline"
+    },
+    {
+        "question": "What is a Credit Limit?",
+        "answer": "Credit Card limit is the pre-defined limit determined based on the applicant’s credit.",
+        "tag": "credit_limit_definition"
+    },
+    {
+        "question": "What happens after the expiry of the Credit card?",
+        "answer": "Card will be renewed by the bank in advance if there is no overdue and will be made available to collect it at concerned branch at least 3 days prior to expiry.",
+        "tag": "credit_card_expiry"
+    },
+    {
+        "question": "What should I do after receiving my Credit Card and PIN?",
+        "answer": "Once card is delivered to the customer, bank needs to activate it which normally takes place on the same date. After activation, customer has to change the PIN from SBL or NEPS member banks’ ATM.",
+        "tag": "credit_card_activation"
+    },
+    {
+        "question": "What are the benefits of having SBL Credit card?",
+        "answer": "- Can be used for the purchase of goods and services.\n- Cash withdrawal facility (10% of Credit Limit).\n- Minimum 15-45 days credit facility.\n- Revolving Credit Facility.\n- Convenient and safe.\n- Very useful while traveling.\n- Credit cardholders will have the privileges of Club Siddhartha offered by Merchants/ Partners only.",
+        "tag": "credit_card_benefits"
+    },
+    {
+        "question": "What is the billing date and when is it?",
+        "answer": "The billing date is the date when statement of credit card is generated. It is 25th of English month.",
+        "tag": "billing_date"
+    },
+    {
+        "question": "What is Payment due date?",
+        "answer": "Payment due date always falls on 10th of English calendar month and payment has to be made within payment due date to avoid the financial charges.",
+        "tag": "payment_due_date"
+    },
+    {
+        "question": "What is Late Payment Fee?",
+        "answer": "If the card holder does not make minimum payment mandatory by due date, late payment fee will be levied to the card holder. i.e. Rs 300 or 1% of overdue amount or max NPR. 2,000.",
+        "tag": "late_payment_fee"
+    },
+    {
+        "question": "What is the payment Option?",
+        "answer": "Payment options is an option to be selected by the cardholder advising bank whether card holder wants to settle entire outstanding or only a part of it.",
+        "tag": "payment_option"
+    },
+    {
+        "question": "What is the Minimum Payment Due?",
+        "answer": "If the card holder selects the full payment option, total outstanding amount is the minimum payment due and if card holder selects 10% payment option, his minimum payment due is 10% of the transaction amount + fees and charges.",
+        "tag": "minimum_payment_due"
+    },
+    {
+        "question": "Do I need to open an account for applying SBL credit card?",
+        "answer": "It is not mandatory to open an account to apply for SBL Credit Card. If card holder maintains account at SBL, s/he will have the facility for providing standing instructions to debit his/her account on due date.",
+        "tag": "account_requirement_credit"
+    },
+    {
+        "question": "Can SBL Credit Card also be used at online purchases?",
+        "answer": "SBL Credit Card can be used at online purchase at India and Nepal. But needs to apply for this service in writing. The form is available at all branches of the bank.",
+        "tag": "credit_online_usage"
+    },
+    {
+        "question": "What is SBL International Travel Card?",
+        "answer": "SBL International Travel Card is a prepaid card which is issued against passport facility for exchanging foreign currency to the Nepalese citizens who are travelling to abroad. Confirmed air ticket and passport with valid visa is required to get foreign currency or any exchange facility provided by Nepal Rastra Bank. International Travel can be used all over the world except India. International Travel card will be issued in USD currency and can be used for purchase, cash withdrawal purpose and online purchase.",
+        "tag": "international_travel_card"
+    },
+    {
+        "question": "How do I get SBL International Card?",
+        "answer": "You can apply for Int’l travel card from any branch of the Bank. The Card is issued within 30 Minutes.",
+        "tag": "travel_card_application"
+    },
+    {
+        "question": "Do I need to activate my SBL International Travel Card?",
+        "answer": "Yes. Your card needs to be activated, prior to performing any transaction.",
+        "tag": "travel_card_activation"
+    },
+    {
+        "question": "Do I need to change PIN for my International Travel Card?",
+        "answer": "Yes. After activation, you need to change the PIN from SBL ATMs or NEPS member banks’ ATM. Then only International Travel card can be used for purchases or cash withdrawal facilities.",
+        "tag": "travel_card_pin_change"
+    },
+    {
+        "question": "Who can apply for SBL International Travel Card?",
+        "answer": "Any Nepalese citizens can apply for SBL International Travel Card with valid Visa and confirmed air ticket.",
+        "tag": "travel_card_applicants"
+    },
+    {
+        "question": "Is account required for SBL International Travel Card?",
+        "answer": "No, Account is not required for SBL International Travel Card.",
+        "tag": "travel_card_account_requirement"
+    },
+    {
+        "question": "What should I do if the card gets lost or stolen?",
+        "answer": "You have to contact Siddhartha Bank’s Call Center at +977 14443410 (7:00 AM - 10:00 pm 365x7 days) to block the card immediately and confirm the last transaction which is performed by using your card too. You can request the following contact details to block the card.\n- Telephone Number: +977 1 4443410 (Direct Line), 4442919 Ext. 2415\n- Viber Number: 9851242919\n- E-mail: card@sbl.com.np",
+        "tag": "card_blocking"
+    },
+    {
+        "question": "How much fee is charged to get SBL International Card?",
+        "answer": "Rs.1000.00 for the first time and next time onwards Rs. 500 per load will be charged. The Card will be valid for 2 years.",
+        "tag": "international_card_fee"
+    },
+    {
+        "question": "Is there any Transaction Fee while using SBL International Travel Card?",
+        "answer": "- Yes, there is transaction fee for cash withdrawal and balance inquiry, if it is done through other Bank’s ATM. There is no charge for the purchase of goods and services.\n- USD 5/- & USD 1/- per transaction will be charged to the cardholder if the transaction is performed at Visa Network for cash withdrawal and balance inquiry respectively. USD 2/- & USD 0.20 will be charged if transaction is performed at NEPS member bank ATM for cash withdrawal and Balance Inquiry.",
+        "tag": "international_transaction_fee"
+    },
+    {
+        "question": "Can others use my SBL International Travel Card?",
+        "answer": "No, others cannot use your card.",
+        "tag": "card_usage_restriction"
+    },
+    {
+        "question": "How much limit is assigned to my SBL International Travel Card?",
+        "answer": "ATM POS\n- Per Transaction Limit: USD 500/- to USD 1000/-\n- Daily Limit: USD 1,000/- to USD 1,500/-\n- Monthly Limit: USD 2,500/- to USD 5,000/-",
+        "tag": "international_card_limit"
+    },
+    {
+        "question": "Can I use my SBL International Travel Card in India?",
+        "answer": "No, it is not allowed to use in India.",
+        "tag": "international_usage_restriction"
+    },
+    {
+        "question": "Where can I use my SBL International Travel Card?",
+        "answer": "You can use it at millions of merchant outlets that accept Visa cards such as supermarkets, pharmacies, clothing stores, drug stores, gas stations, hotels, restaurants, fitness centers and online purchases etc. all over the world.",
+        "tag": "international_usage_locations"
+    },
+    {
+        "question": "Is there any limit to load the amount in my SBL International Travel Card?",
+        "answer": "Yes, there is a limit of USD 2,500/- against the passport facility generally as per NRB. An additional amount can be added based on NRB directions and special permission from NRB.",
+        "tag": "international_load_limit"
+    },
+    {
+        "question": "How do I know the balance of my International Card?",
+        "answer": "You can check your balance at any ATM which accepts Visa cards all over the world or contact at SBL Call center as per our contact details mentioned above or any branch of SBL.",
+        "tag": "international_balance_check"
+    },
+    {
+        "question": "How can I get my SBL International Travel Card statement?",
+        "answer": "You can get your SBL International Travel Card statement upon your request via mail, phone or Viber. Statement will be sent to registered email id which is provided to the bank while applying for the card.",
+        "tag": "international_statement"
+    },
+    {
+        "question": "What should I do if my International Travel Card is declined?",
+        "answer": "If your transaction is declined, please contact at following numbers. The support person will be available 7:00 AM- 10:00 PM 365X7 days.\n- TELEPHONE NUMBER: +977 1 4443410 (Direct Line), 4442919 Ext. 2415\n- Viber Number: 9851242919\n- E-mail: card@sbl.com.np",
+        "tag": "international_decline"
+    },
+    {
+        "question": "Can I use my SBL International Card for online purchases?",
+        "answer": "Yes, you can use your SBL International Travel for online purchases. But you have to request for e-com activation separately.",
+        "tag": "international_online_usage"
+    }
+]

@@ -1,0 +1,28 @@
+version: "3.0"
+stories:
+  - story: greeting and mobile banking query flow
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: query_mobile_banking
+      - action: action_mobile_banking_response
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: mobile banking query without greeting
+    steps:
+      - intent: query_mobile_banking
+      - action: action_mobile_banking_response
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: multiple queries in one conversation
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: query_mobile_banking
+      - action: action_mobile_banking_response
+      - intent: query_mobile_banking
+      - action: action_mobile_banking_response
+      - intent: goodbye
+      - action: utter_goodbye

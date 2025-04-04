@@ -1,0 +1,26 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - query_mobile_banking
+
+entities:
+  - mobile_query
+
+slots:
+  query:
+    type: text
+    mappings:
+      - type: from_text
+
+responses:
+  utter_greet:
+    - text: "Hello! I am your Virtual Assistant. How may I assist you with your mobile banking needs today?"
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+  utter_default:
+    - text: "I'm sorry, I didn't understand that. Could you please rephrase?"
+
+actions:
+  - action_mobile_banking_response

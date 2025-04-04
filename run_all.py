@@ -1,0 +1,122 @@
+#!/usr/bin/env python3
+import subprocess
+import os
+import time
+import sys
+import signal
+import threading
+import webbrowser
+
+# Terminal colors for better visibility
+class Colors:
+    HEADER = '\033[95m'
+    BLUE = '\033[94m'
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    RED = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+
+def print_colored(text, color):
+    print(f"{color}{text}{Colors.ENDC}")
+
+# Function to run a command in a new process
+def run_command(command, name, color):
+    print_colored(f"Starting {name}...", color)
+    try:
+        process = subprocess.Popen(
+            command,
+            shell=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            universal_newlines=True,
+            bufsize=1
+        )
+        
+        for line in process.stdout:
+            print_colored(f"[{name}] {line.strip()}", color)
+            
+        process.wait()
+        print_colored(f"{name} process ended with code {process.returncode}", color)
+        return process
+    except Exception as e:
+        print_colored(f"Error starting {name}: {e}", Colors.RED)
+        return None
+
+# Store processes for proper cleanup
+processes = []
+
+# Handle graceful shutdown
+def signal_handler(sig, frame):
+    print_colored("\nShutting down all services...", Colors.YELLOW)
+    for process in processes:
+        if process and process.poll() is None:
+            process.terminate()
+    print_colored("All services stopped.", Colors.GREEN)
+    sys.exit(0)
+
+signal.signal(signal.SIGINT, signal_handler)
+
+def main():
+    # Check if Rasa is installed
+    try:
+        subprocess.run(["rasa", "--version"], check=True, stdout=subprocess.PIPE)
+    except (subprocess.SubprocessError, FileNotFoundError):
+        print_colored("Rasa is not installed or not in PATH. Please install Rasa first.", Colors.RED)
+        sys.exit(1)
+    
+    # Check if Streamlit is installed
+    try:
+        subprocess.run(["streamlit", "--version"], check=True, stdout=subprocess.PIPE)
+    except (subprocess.SubprocessError, FileNotFoundError):
+        print_colored("Streamlit is not installed. Installing it now...", Colors.YELLOW)
+        subprocess.run([sys.executable, "-m", "pip", "install", "streamlit"])
+    
+    # Start Rasa action server
+    action_server = threading.Thread(
+        target=run_command,
+        args=("rasa run actions", "Action Server", Colors.BLUE)
+    )
+    action_server.daemon = True
+    action_server.start()
+    
+    # Give action server time to start
+    time.sleep(2)
+    
+    # Start Rasa server
+    rasa_server = threading.Thread(
+        target=run_command,
+        args=("rasa run --enable-api --cors '*'", "Rasa Server", Colors.GREEN)
+    )
+    rasa_server.daemon = True
+    rasa_server.start()
+    
+    # Give Rasa server time to start
+    time.sleep(5)
+    
+    # Start Streamlit app
+    print_colored("Starting Streamlit frontend...", Colors.YELLOW)
+    streamlit_url = "http://localhost:8501"
+    print_colored(f"Streamlit will be available at: {streamlit_url}", Colors.YELLOW)
+    
+    # Open browser automatically
+    webbrowser.open(streamlit_url)
+    
+    # Run Streamlit in the main thread
+    # Run Streamlit in the main thread
+    streamlit_process = run_command("streamlit run app.py --server.headless true", "Streamlit", Colors.YELLOW)
+    processes.append(streamlit_process)
+    
+    # Keep the script running
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        signal_handler(None, None)
+
+if __name__ == "__main__":
+    print_colored("=" * 50, Colors.BOLD)
+    print_colored("  Starting Banking Virtual Assistant", Colors.BOLD)
+    print_colored("=" * 50, Colors.BOLD)
+    main()
+
