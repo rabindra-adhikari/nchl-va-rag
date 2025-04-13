@@ -1,377 +1,1027 @@
 [
-    {
+  {
       "question": "What is eBanking?",
       "answer": "eBanking (electronic banking) refers to all electronic banking services including internet banking, mobile banking, and SMS banking. In Nepal, eBanking has grown significantly, allowing customers to perform banking operations remotely without visiting physical branches.",
       "tag": "ebanking"
-    },
-    {
+  },
+  {
       "question": "What is a cheque?",
       "answer": "A cheque is a written document that orders a bank to pay a specific amount of money from a person's account to the person named on the cheque. Although digital payments are increasing in Nepal, cheques are still commonly used for business transactions and large payments.",
       "tag": "cheque"
-    },
-    {
+  },
+  {
       "question": "What is IBFT?",
       "answer": "IBFT (Inter-Bank Fund Transfer) is a service that allows customers to transfer funds from their account to an account in another bank. In Nepal, IBFT is facilitated through various systems including connectIPS and can be initiated through mobile banking applications.",
       "tag": "ibft"
-    },
-    {
+  },
+  {
       "question": "What is RTGS?",
       "answer": "RTGS (Real Time Gross Settlement) is a funds transfer system where money is moved from one bank to another in real-time and on a gross basis. In Nepal, RTGS was implemented by Nepal Rastra Bank to facilitate large-value interbank transfers.",
       "tag": "rtgs"
-    },
-    {
+  },
+  {
       "question": "What is ECC?",
       "answer": "ECC (Electronic Cheque Clearing) is a system that digitally processes cheques, eliminating the need for physical movement of cheques between banks. In Nepal, the Nepal Clearing House Limited (NCHL) operates the ECC system to expedite cheque clearing processes.",
       "tag": "ecc"
-    },
-    {
+  },
+  {
       "question": "What is NCHL?",
       "answer": "NCHL (Nepal Clearing House Limited) is a company established to implement electronic payment and clearing systems in Nepal. It operates various payment systems including Electronic Cheque Clearing (ECC) and connectIPS to modernize the payment infrastructure in Nepal.",
       "tag": "nchl"
-    },
-    {
+  },
+  {
       "question": "What is a mobile wallet?",
       "answer": "A mobile wallet is a digital application that stores payment information and allows users to make payments using their mobile devices. Popular mobile wallets in Nepal include eSewa, Khalti, IME Pay, and others, which facilitate bill payments, fund transfers, and merchant payments.",
       "tag": "mobile_wallet"
-    },
-    {
+  },
+  {
       "question": "What is SCT?",
       "answer": "SCT (Smart Choice Technologies) is a payment service provider in Nepal that offers card and digital payment solutions. It manages a network of POS terminals and ATMs and facilitates electronic transactions across various platforms.",
       "tag": "sct"
-    },
-    {
+  },
+  {
       "question": "What is QR payment?",
       "answer": "QR payment involves scanning a QR (Quick Response) code using a mobile banking app or digital wallet to make payments. In Nepal, QR payments have become increasingly popular for merchant payments, offering a convenient alternative to cash and card transactions.",
       "tag": "qr_payment"
-    },
-    {
+  },
+  {
       "question": "What is NPS?",
       "answer": "NPS (National Payment Switch) is a centralized infrastructure that connects various payment systems and facilitates interoperability between different financial institutions. In Nepal, NPS is being developed to streamline electronic payments across the country.",
       "tag": "nps"
-    },
-    {
+  },
+  {
       "question": "What is SWIFT?",
       "answer": "SWIFT (Society for Worldwide Interbank Financial Telecommunication) is a global network that enables financial institutions to send and receive information about financial transactions securely. Nepali banks use SWIFT for international fund transfers and communications.",
       "tag": "swift"
-    },
-    {
+  },
+  {
       "question": "What is a credit score?",
       "answer": "A credit score is a numerical expression based on an analysis of a person's credit files, representing their creditworthiness. In Nepal, credit information is maintained by the Credit Information Bureau of Nepal (KARJA SUCHANA KENDRA), which helps banks assess credit risk.",
       "tag": "credit_score"
-    },
-    {
+  },
+  {
       "question": "What is CIB?",
       "answer": "CIB (Credit Information Bureau) in Nepal, also known as Karja Suchana Kendra, is an organization that collects and maintains information about borrowers' credit histories and loan repayment patterns. Banks consult CIB before approving loans.",
       "tag": "cib"
-    },
-    {
+  },
+  {
       "question": "What is KYC?",
       "answer": "KYC (Know Your Customer) is a process by which banks obtain information about the identity and address of customers. In Nepal, KYC documentation typically includes citizenship certificates, passport, or other government-issued identification and proof of address.",
       "tag": "kyc"
-    },
-    {
+  },
+  {
       "question": "What is AML?",
       "answer": "AML (Anti-Money Laundering) refers to laws, regulations, and procedures designed to prevent criminals from disguising illegally obtained funds as legitimate income. Nepali banks implement AML policies in compliance with Nepal Rastra Bank directives.",
       "tag": "aml"
-    },
-    {
+  },
+  {
       "question": "What is a debit card?",
       "answer": "A debit card is a payment card that deducts money directly from a consumer's checking account when making a purchase or ATM withdrawal. Most Nepali banks issue debit cards that can be used at ATMs and POS terminals nationwide.",
       "tag": "debit_card"
-    },
-    {
+  },
+  {
       "question": "What is a credit card?",
       "answer": "A credit card is a payment card that allows the cardholder to borrow funds to pay for goods and services. In Nepal, several banks issue credit cards with various benefits, interest rates, and credit limits based on the customer's eligibility.",
       "tag": "credit_card"
-    },
-    {
+  },
+  {
       "question": "What is a standing instruction?",
       "answer": "A standing instruction is an order a customer gives to their bank to pay a set amount at regular intervals. In Nepali banking, standing instructions are commonly used for recurring payments like loan installments, insurance premiums, or utility bills.",
       "tag": "standing_instruction"
-    },
-    {
+  },
+  {
       "question": "What is the difference between mobile banking and internet banking?",
       "answer": "Mobile banking is accessed through a mobile application on a smartphone, while internet banking is accessed through a web browser on any device with internet connectivity. In Nepal, mobile banking offers more convenience for on-the-go transactions, while internet banking might offer additional features for complex transactions.",
       "tag": "banking_comparison"
-    },
-    {
+  },
+  {
       "question": "What is NPR?",
       "answer": "NPR stands for Nepalese Rupee, which is the official currency of Nepal. All banking transactions within Nepal are conducted in NPR, and the exchange rate with other currencies is regulated by Nepal Rastra Bank.",
       "tag": "npr"
-    },
-    {
+  },
+  {
       "question": "What is an OTP?",
       "answer": "OTP (One-Time Password) is a temporary password that is valid for only one login session or transaction. OTPs are commonly sent via SMS for authenticating transactions, enhancing security for digital banking services.",
       "tag": "otp"
-    },
-    {
+  },
+  {
       "question": "What is MICR?",
       "answer": "MICR (Magnetic Ink Character Recognition) is a technology used primarily by the banking industry to facilitate the processing of cheques. In Nepal, the MICR code appears at the bottom of cheques and contains details about the bank branch and account.",
       "tag": "micr"
-    },
-    {
+  },
+  {
       "question": "What is a bank statement?",
       "answer": "A bank statement is a record of all transactions in a bank account during a specific period. Nepali banks typically provide monthly statements, which can be accessed through online banking portals or requested at bank branches.",
       "tag": "bank_statement"
-    },
-    {
+  },
+  {
       "question": "What is a beneficiary?",
       "answer": "In banking terms, a beneficiary is a person or entity who receives funds from a payer. When setting up fund transfers in Nepali mobile banking apps, users often need to add beneficiaries with their account details before initiating transactions.",
       "tag": "beneficiary"
-    },
-    {
+  },
+  {
       "question": "What is ABBS?",
       "answer": "ABBS (Any Branch Banking Service) allows customers to perform basic banking transactions at any branch of the bank, regardless of where the account was opened. Most commercial banks in Nepal offer ABBS for customer convenience.",
       "tag": "abbs"
-    },
-    {
+  },
+  {
       "question": "What is NEFT?",
       "answer": "NEFT (National Electronic Funds Transfer) is an electronic fund transfer system that enables bank customers to transfer funds between accounts in different banks. In Nepal, similar functionality is provided through connectIPS and other interbank transfer systems.",
       "tag": "neft"
-    },
-    {
+  },
+  {
       "question": "What is a dormant account?",
       "answer": "A dormant account is a bank account that has had no financial activity for a specified period, typically 1-2 years in Nepal. Banks may charge additional fees for dormant accounts, and reactivation usually requires visiting a branch with proper identification.",
       "tag": "dormant_account"
-    },
-    {
+  },
+  {
       "question": "What is an overdraft?",
       "answer": "An overdraft occurs when withdrawals from a bank account exceed the available balance, resulting in a negative balance. Some Nepali banks offer overdraft facilities, particularly for business accounts, allowing customers to withdraw more than their account balance up to a preset limit.",
       "tag": "overdraft"
-    },
-    {
+  },
+  {
       "question": "What is a demand draft?",
       "answer": "A demand draft is a negotiable instrument similar to a cheque but issued by the bank rather than an individual account holder. In Nepal, demand drafts are commonly used for guaranteed payments and are available at bank branches.",
       "tag": "demand_draft"
-    },
-    {
+  },
+  {
       "question": "What is a passbook?",
       "answer": "A passbook is a small book provided by a bank to an account holder that shows all transactions in the account. While digital statements are becoming more common in Nepal, many customers still use passbooks, especially in rural areas.",
       "tag": "passbook"
-    },
-    {
+  },
+  {
       "question": "What is eSewa?",
       "answer": "eSewa is one of Nepal's largest digital wallets and payment service providers. It allows users to transfer money, pay bills, recharge mobile balance, and make merchant payments through their mobile phones or the web.",
       "tag": "esewa"
-    },
-    {
+  },
+  {
       "question": "What is Khalti?",
       "answer": "Khalti is a digital wallet and payment gateway in Nepal that enables users to make online payments, utility bill payments, mobile recharges, and fund transfers through their smartphones.",
       "tag": "khalti"
-    },
-    {
+  },
+  {
       "question": "What is IME Pay?",
       "answer": "IME Pay is a mobile wallet service in Nepal operated by IME Group. It allows users to send money, pay bills, make merchant payments, and access various financial services through a mobile application.",
       "tag": "ime_pay"
-    },
-    {
+  },
+  {
       "question": "What is Fonepay?",
       "answer": "Fonepay is a digital payment platform in Nepal that facilitates QR-based payments, connecting banks and financial institutions. It allows users to make payments directly from their bank accounts through partner banking apps.",
       "tag": "fonepay"
-    },
-    {
+  },
+  {
       "question": "What is a merchant payment?",
       "answer": "Merchant payment refers to transactions where customers pay businesses for goods or services. In Nepal, merchant payments can be made through various channels including cash, cards, mobile banking, QR codes, and digital wallets.",
       "tag": "merchant_payment"
-    },
-    {
+  },
+  {
       "question": "What is a password policy?",
       "answer": "A password policy is a set of rules designed to enhance security by encouraging users to create strong, complex passwords. Nepali banks typically require passwords with a combination of letters, numbers, and special characters to secure online and mobile banking access.",
       "tag": "password_policy"
-    },
-    {
+  },
+  {
       "question": "What is a mini statement?",
       "answer": "A mini statement is a condensed version of a bank statement showing the last few transactions in an account. In Nepali mobile banking apps, customers can often view mini statements directly within the application without requesting a full statement.",
       "tag": "mini_statement"
-    },
-    {
+  },
+  {
       "question": "What is SMS banking?",
       "answer": "SMS banking allows customers to access basic banking services via text messages. In Nepal, SMS banking services typically include balance inquiries, mini statements, and transaction alerts, making banking accessible even without smartphones or internet.",
       "tag": "sms_banking"
-    },
-    {
+  },
+  {
       "question": "What is a transaction limit?",
       "answer": "A transaction limit is the maximum amount of money that can be transferred in a single transaction or within a specific period. Nepal Rastra Bank and individual banks set transaction limits for various banking channels to manage risk and security.",
       "tag": "transaction_limit"
-    },
-    {
+  },
+  {
       "question": "What is two-factor authentication?",
       "answer": "Two-factor authentication (2FA) is a security process that requires two different forms of identification to access an account. In Nepali banking, this typically includes a password plus an OTP sent to the registered mobile number.",
       "tag": "two_factor_authentication"
-    },
-    {
+  },
+  {
       "question": "What is EMI?",
       "answer": "EMI (Equated Monthly Installment) is a fixed payment amount made by a borrower to a lender at a specified date each calendar month. In Nepal, loans for vehicles, homes, and consumer durables are commonly repaid through EMIs.",
       "tag": "emi"
-    },
-    {
+  },
+  {
       "question": "What is a recurring deposit?",
       "answer": "A recurring deposit is a financial product where the depositor regularly deposits a fixed amount for a specified period, earning interest. Many Nepali banks offer recurring deposit schemes to encourage systematic savings.",
       "tag": "recurring_deposit"
-    },
-    {
+  },
+  {
       "question": "What is account maintenance fee?",
       "answer": "An account maintenance fee is a charge levied by banks for maintaining and servicing an account. In Nepal, various banks charge different maintenance fees depending on the type of account and the average balance maintained.",
       "tag": "account_maintenance_fee"
-    },
-    {
+  },
+  {
       "question": "What is NCHL-IPS?",
       "answer": "NCHL-IPS (Interbank Payment System) is an electronic payment system operated by Nepal Clearing House Limited that facilitates interbank transactions. It enables customers to transfer funds between accounts in different banks in Nepal.",
       "tag": "nchl_ips"
-    },
-    {
+  },
+  {
       "question": "What is digital banking?",
       "answer": "Digital banking encompasses all banking services delivered through digital channels, including online banking, mobile banking, and electronic payment systems. In Nepal, digital banking has seen rapid growth, driven by increased internet penetration and smartphone adoption.",
       "tag": "digital_banking"
-    },
-    {
+  },
+  {
       "question": "What is load fund/load wallet?",
       "answer": "Loading funds or loading a wallet refers to transferring money from a bank account to a digital wallet. In Nepal, users can load funds to digital wallets like eSewa, Khalti, or IME Pay through bank transfers, debit cards, or at physical service points.",
       "tag": "load_fund"
-    },
-    {
+  },
+  {
       "question": "What is utility bill payment?",
       "answer": "Utility bill payment refers to paying for services such as electricity, water, internet, and telephone through banking channels. Most Nepali mobile banking apps and digital wallets offer utility bill payment services.",
       "tag": "utility_bill_payment"
-    },
-    {
+  },
+  {
       "question": "What is a joint account?",
       "answer": "A joint account is a bank account owned by two or more individuals. In Nepal, joint accounts are commonly used by family members or business partners and can be operated either jointly (requiring all signatures) or severally (any one signature).",
       "tag": "joint_account"
-    },
-    {
+  },
+  {
       "question": "What is a fixed interest rate?",
       "answer": "A fixed interest rate is an interest rate that remains constant throughout the life of a loan or deposit. In Nepal, many banks offer fixed interest rates for loans and fixed deposits, providing predictability in repayments or earnings.",
       "tag": "fixed_interest_rate"
-    },
-    {
+  },
+  {
       "question": "What is a variable interest rate?",
       "answer": "A variable interest rate is an interest rate that can change over time based on market conditions or the bank's policies. In Nepal, variable rates are often applied to loans and savings accounts, which can lead to fluctuating payments or earnings.",
       "tag": "variable_interest_rate"
-    },
-    {
+  },
+  {
       "question": "What is a co-operative bank?",
       "answer": "A co-operative bank is a financial entity owned and controlled by its members, operating on the principle of mutual assistance. In Nepal, cooperative banks provide savings, loans, and other financial services particularly focusing on local communities and members.",
       "tag": "cooperative_bank"
-    },
-    {
+  },
+  {
       "question": "What is a microfinance institution?",
       "answer": "Microfinance institutions are organizations that provide financial services to low-income populations who typically lack access to traditional banking services. In Nepal, microfinance institutions play a crucial role in financial inclusion, especially in rural areas.",
       "tag": "microfinance"
-    },
-    {
+  },
+  {
       "question": "What is the difference between a commercial bank and a development bank?",
       "answer": "Commercial banks offer a wide range of banking services including deposits, loans, and payments, while development banks in Nepal traditionally focus more on providing medium to long-term financing for development projects and specific sectors. However, the distinction has narrowed in recent years.",
       "tag": "bank_types"
-    },
-    {
+  },
+  {
       "question": "What is a bank draft?",
       "answer": "A bank draft is a payment instrument issued by a bank, guaranteeing payment of the stated amount. In Nepal, bank drafts are used for making secure payments and are considered more reliable than personal cheques as they are pre-paid by the purchaser.",
       "tag": "bank_draft"
-    },
-    {
+  },
+  {
       "question": "What is a telegraphic transfer?",
       "answer": "A telegraphic transfer (TT) is an electronic method of transferring funds, particularly for international transactions. In Nepal, telegraphic transfers are commonly used for sending or receiving money internationally through banking channels.",
       "tag": "telegraphic_transfer"
-    },
-    {
-        "question": "What is mobile banking?",
-        "answer": "Mobile banking is the use of a mobile device, such as a smartphone, to perform banking activities like checking account balances, transferring funds, and paying bills. In Nepal, mobile banking has grown rapidly due to increased smartphone penetration and the push for digital financial services.",
-        "tag": "mobile_banking"
-    },
-    {
-        "question": "What is online banking?",
-        "answer": "Online banking, also known as internet banking, allows customers to conduct financial transactions via a bank's website. It includes services such as viewing account information, transferring money, and paying bills. Many Nepali banks offer online banking platforms to enhance customer convenience.",
-        "tag": "online_banking"
-    },
-    {
-        "question": "What is debit?",
-        "answer": "Debit refers to an amount deducted from a bank account. It is typically used when you make a transaction using a debit card, where funds are immediately withdrawn from your account.",
-        "tag": "debit"
-    },
-    {
-        "question": "What is credit?",
-        "answer": "Credit is the ability to borrow money from a bank or financial institution. It is commonly associated with credit cards and loans, where you borrow money and repay it over time with interest.",
-        "tag": "credit"
-    },
-    {
-        "question": "What is an ATM?",
-        "answer": "An ATM (Automated Teller Machine) is a machine that allows you to perform basic banking transactions such as cash withdrawals, deposits, and balance inquiries without visiting a bank branch. ATMs are widely available across Nepal.",
-        "tag": "atm"
-    },
-    {
-        "question": "What is fund transfer?",
-        "answer": "Fund transfer is the process of moving money from one bank account to another. It can be done within the same bank or between different banks, and is commonly available via mobile and online banking in Nepal.",
-        "tag": "fund_transfer"
-    },
-    {
-        "question": "What is NEPSE?",
-        "answer": "NEPSE stands for Nepal Stock Exchange. It is the only stock exchange in Nepal where shares of publicly traded companies are bought and sold, playing a crucial role in the country's financial market.",
-        "tag": "nepse"
-    },
-    {
-        "question": "What is NRB?",
-        "answer": "NRB stands for Nepal Rastra Bank, the central bank of Nepal. It is responsible for regulating the banking sector, managing monetary policy, and ensuring the stability of the financial system in the country.",
-        "tag": "nrb"
-    },
-    {
-        "question": "What is a savings account?",
-        "answer": "A savings account is a type of bank account where you can deposit money, earn interest, and withdraw funds when needed. In Nepal, most banks offer savings accounts with varying interest rates and benefits.",
-        "tag": "savings_account"
-    },
-    {
-        "question": "What is a current account?",
-        "answer": "A current account is designed for day-to-day transactions and typically does not earn interest. It is often used by businesses or individuals who need to make frequent transactions. Nepali banks provide current accounts tailored for business needs.",
-        "tag": "current_account"
-    },
-    {
-        "question": "What is a loan?",
-        "answer": "A loan is a sum of money borrowed from a bank or financial institution that must be repaid with interest over time. Nepali banks offer various types of loans, such as personal, home, and business loans, each with specific terms and conditions.",
-        "tag": "loan"
-    },
-    {
-        "question": "What is an interest rate?",
-        "answer": "An interest rate is the percentage charged on a loan or paid on a deposit over a period of time. It determines how much extra you will pay when borrowing money, or earn when saving. In Nepal, interest rates are influenced by policies set by NRB.",
-        "tag": "interest_rate"
-    },
-    {
-        "question": "What is a fixed deposit?",
-        "answer": "A fixed deposit (FD) is a financial product offered by banks where you deposit a sum of money for a fixed period at a predetermined interest rate. Fixed deposits are considered a safe investment, and many Nepali banks offer attractive FD rates.",
-        "tag": "fixed_deposit"
-    },
-    {
-        "question": "What is a systematic investment plan (SIP)?",
-        "answer": "A systematic investment plan (SIP) involves investing a fixed amount of money at regular intervals in mutual funds or other investment products. While SIPs are popular globally, similar investment plans are available in Nepal through mutual fund companies and banks.",
-        "tag": "sip"
-    },
-    {
-        "question": "What is digital payment?",
-        "answer": "Digital payment refers to making transactions electronically using mobile apps, online banking, or digital wallets. In Nepal, digital payment systems have expanded rapidly, providing secure and convenient ways for consumers to pay for goods and services.",
-        "tag": "digital_payment"
-    },
-    {
-        "question": "What is remittance?",
-        "answer": "Remittance is the process of sending money, typically by a migrant worker, to their family in their home country. In Nepal, remittances are a significant source of income for many households and contribute substantially to the national economy.",
-        "tag": "remittance"
-    },
-    {
-        "question": "Who operates connectIPS e-Payment System?",
-        "answer": "connectIPS e-Payment System is developed and operated by Nepal Clearing House Limited (NCHL), which is licensed & regulated by Nepal Rastra Bank (NRB) as a payment system operator (PSO). NCHL is promoted by Nepal Rastra Bank and majority of the banks & financial institutions.",
-        "tag": "operation"
-    },
-    {
-        "question": "What is a connectIPS?",
-        "answer": "connectIPS is an e-payment system established as a single payments platform to allow the bank customers for fund transfer and service payments from various channels. The payment transactions are processed directly from/to the bank accounts and the transactions are normally immediate at the sender and receiver. The system is available 24x7 through alternate channels of the web (www.connectips.com), mobile App and payment process/ gateway. This can also be accessed from the mobile/internet banking of major banks & financial institutions and App/Web of various mobile wallets.",
-        "tag": "definition"
-    },
-    {
-        "question": "Is connectIPS another mobile wallet?",
-        "answer": "connectIPS is an instant or faster payment system with additional channels (web, mobile, gateway) as platforms to link multiple bank accounts and to process payment transactions through one of the linked bank accounts, unlike the requirement of load/unload of fund in mobile wallets. Multiple mobile wallets are also associated with connectIPS to help them load/unload fund in their wallets.",
-        "tag": "comparison_with_wallet"
-    },
-    {
-        "question": "What are the services available in connectIPS?",
-        "answer": "connectIPS is a single payments platform that allows you to link one or multiple bank accounts and then use one of such bank accounts for payments. It can be used as a payment processor (gateway), for fund transfer and biller/service payments. The payment processor is an online payment gateway available at web portal checkouts of various service providers (merchants/ creditors), such as government portals (FCGO, Tax, Loksewa, Passport, CRO), TMS of Nepse, e-commerce websites, travel & tour, airlines, insurance websites, etc. Fund transfer allows the transfer of funds between own accounts, other bank accounts, connectIPS users (based on mobile number) or to listed favorite account. Biller payments are the third-party payments to the service providers (creditor/merchant) initiated from the connectIPS channels (web or mobile app) itself. Some of the available services are Government payments (Tax, Loksewa, Passport, Company Registrar), travel & tour, school/college fee, stockbrokers, insurance premium, and many more. Such services are enrolled by the member BFIs.",
-        "tag": "services"
-    }  
+  },
+  {
+      "question": "What is mobile banking?",
+      "answer": "Mobile banking is the use of a mobile device, such as a smartphone, to perform banking activities like checking account balances, transferring funds, and paying bills. In Nepal, mobile banking has grown rapidly due to increased smartphone penetration and the push for digital financial services.",
+      "tag": "mobile_banking"
+  },
+  {
+      "question": "What is online banking?",
+      "answer": "Online banking, also known as internet banking, allows customers to conduct financial transactions via a bank's website. It includes services such as viewing account information, transferring money, and paying bills. Many Nepali banks offer online banking platforms to enhance customer convenience.",
+      "tag": "online_banking"
+  },
+  {
+      "question": "What is debit?",
+      "answer": "Debit refers to an amount deducted from a bank account. It is typically used when you make a transaction using a debit card, where funds are immediately withdrawn from your account.",
+      "tag": "debit"
+  },
+  {
+      "question": "What is credit?",
+      "answer": "Credit is the ability to borrow money from a bank or financial institution. It is commonly associated with credit cards and loans, where you borrow money and repay it over time with interest.",
+      "tag": "credit"
+  },
+  {
+      "question": "What is an ATM?",
+      "answer": "An ATM (Automated Teller Machine) is a machine that allows you to perform basic banking transactions such as cash withdrawals, deposits, and balance inquiries without visiting a bank branch. ATMs are widely available across Nepal.",
+      "tag": "atm"
+  },
+  {
+      "question": "What is fund transfer?",
+      "answer": "Fund transfer is the process of moving money from one bank account to another. It can be done within the same bank or between different banks, and is commonly available via mobile and online banking in Nepal.",
+      "tag": "fund_transfer"
+  },
+  {
+      "question": "What is NEPSE?",
+      "answer": "NEPSE stands for Nepal Stock Exchange. It is the only stock exchange in Nepal where shares of publicly traded companies are bought and sold, playing a crucial role in the country's financial market.",
+      "tag": "nepse"
+  },
+  {
+      "question": "What is NRB?",
+      "answer": "NRB stands for Nepal Rastra Bank, the central bank of Nepal. It is responsible for regulating the banking sector, managing monetary policy, and ensuring the stability of the financial system in the country.",
+      "tag": "nrb"
+  },
+  {
+      "question": "What is a savings account?",
+      "answer": "A savings account is a type of bank account where you can deposit money, earn interest, and withdraw funds when needed. In Nepal, most banks offer savings accounts with varying interest rates and benefits.",
+      "tag": "savings_account"
+  },
+  {
+      "question": "What is a current account?",
+      "answer": "A current account is designed for day-to-day transactions and typically does not earn interest. It is often used by businesses or individuals who need to make frequent transactions. Nepali banks provide current accounts tailored for business needs.",
+      "tag": "current_account"
+  },
+  {
+      "question": "What is a loan?",
+      "answer": "A loan is a sum of money borrowed from a bank or financial institution that must be repaid with interest over time. Nepali banks offer various types of loans, such as personal, home, and business loans, each with specific terms and conditions.",
+      "tag": "loan"
+  },
+  {
+      "question": "What is an interest rate?",
+      "answer": "An interest rate is the percentage charged on a loan or paid on a deposit over a period of time. It determines how much extra you will pay when borrowing money, or earn when saving. In Nepal, interest rates are influenced by policies set by NRB.",
+      "tag": "interest_rate"
+  },
+  {
+      "question": "What is a fixed deposit?",
+      "answer": "A fixed deposit (FD) is a financial product offered by banks where you deposit a sum of money for a fixed period at a predetermined interest rate. Fixed deposits are considered a safe investment, and many Nepali banks offer attractive FD rates.",
+      "tag": "fixed_deposit"
+  },
+  {
+      "question": "What is a systematic investment plan (SIP)?",
+      "answer": "A systematic investment plan (SIP) involves investing a fixed amount of money at regular intervals in mutual funds or other investment products. While SIPs are popular globally, similar investment plans are available in Nepal through mutual fund companies and banks.",
+      "tag": "sip"
+  },
+  {
+      "question": "What is digital payment?",
+      "answer": "Digital payment refers to making transactions electronically using mobile apps, online banking, or digital wallets. In Nepal, digital payment systems have expanded rapidly, providing secure and convenient ways for consumers to pay for goods and services.",
+      "tag": "digital_payment"
+  },
+  {
+      "question": "What is remittance?",
+      "answer": "Remittance is the process of sending money, typically by a migrant worker, to their family in their home country. In Nepal, remittances are a significant source of income for many households and contribute substantially to the national economy.",
+      "tag": "remittance"
+  },
+  {
+      "question": "Who operates connectIPS e-Payment System?",
+      "answer": "connectIPS e-Payment System is developed and operated by Nepal Clearing House Limited (NCHL), which is licensed & regulated by Nepal Rastra Bank (NRB) as a payment system operator (PSO). NCHL is promoted by Nepal Rastra Bank and majority of the banks & financial institutions.",
+      "tag": "operation"
+  },
+  {
+      "question": "What is a connectIPS?",
+      "answer": "connectIPS is an e-payment system established as a single payments platform to allow the bank customers for fund transfer and service payments from various channels. The payment transactions are processed directly from/to the bank accounts and the transactions are normally immediate at the sender and receiver. The system is available 24x7 through alternate channels of the web (www.connectips.com), mobile App and payment process/ gateway. This can also be accessed from the mobile/internet banking of major banks & financial institutions and App/Web of various mobile wallets.",
+      "tag": "definition"
+  },
+  {
+      "question": "Is connectIPS another mobile wallet?",
+      "answer": "connectIPS is an instant or faster payment system with additional channels (web, mobile, gateway) as platforms to link multiple bank accounts and to process payment transactions through one of the linked bank accounts, unlike the requirement of load/unload of fund in mobile wallets. Multiple mobile wallets are also associated with connectIPS to help them load/unload fund in their wallets.",
+      "tag": "comparison_with_wallet"
+  },
+  {
+      "question": "What are the services available in connectIPS?",
+      "answer": "connectIPS is a single payments platform that allows you to link one or multiple bank accounts and then use one of such bank accounts for payments. It can be used as a payment processor (gateway), for fund transfer and biller/service payments. The payment processor is an online payment gateway available at web portal checkouts of various service providers (merchants/ creditors), such as government portals (FCGO, Tax, Loksewa, Passport, CRO), TMS of Nepse, e-commerce websites, travel & tour, airlines, insurance websites, etc. Fund transfer allows the transfer of funds between own accounts, other bank accounts, connectIPS users (based on mobile number) or to listed favorite account. Biller payments are the third-party payments to the service providers (creditor/merchant) initiated from the connectIPS channels (web or mobile app) itself. Some of the available services are Government payments (Tax, Loksewa, Passport, Company Registrar), travel & tour, school/college fee, stockbrokers, insurance premium, and many more. Such services are enrolled by the member BFIs.",
+      "tag": "services"
+  },
+  {
+      "question": "What is the difference between connectIPS and other payment systems?",
+      "answer": "connectIPS is a single payments platform that allows you to link one or multiple bank accounts and then use one of such bank accounts for payments. It can be used as a payment processor (gateway), for fund transfer and biller/service payments. The payment processor is an online payment gateway available at web portal checkouts of various service providers (merchants/ creditors), such as government portals (FCGO, Tax, Loksewa, Passport, CRO), TMS of Nepse, e-commerce websites, travel & tour, airlines, insurance websites, etc. Fund transfer allows the transfer of funds between own accounts, other bank accounts, connectIPS users (based on mobile number) or to listed favorite account. Biller payments are the third-party payments to the service providers (creditor/merchant) initiated from the connectIPS channels (web or mobile app) itself. Some of the available services are Government payments (Tax, Loksewa, Passport, Company Registrar), travel & tour, school/college fee, stockbrokers, insurance premium, and many more. Such services are enrolled by the member BFIs.",
+      "tag": "difference"
+  },
+  {
+      "question": "How many people use mobile banking in Nepal?",
+      "answer": "As of 2022, there were over 18 million registered mobile banking users in Nepal, according to Nepal Rastra Bank data. This number has likely increased by 2025, driven by factors like smartphone penetration and the convenience of digital financial services.",
+      "tag": "mobile_banking_users"
+  },
+  {
+      "question": "What are the most popular mobile banking apps in Nepal?",
+      "answer": "Some of the most popular mobile banking apps in Nepal include NIC Asia MoBank, Nabil nBank, Global IME Smart Plus, eNMB App, and Digi Prabhu App. These apps offer features like fund transfers, bill payments, QR code payments, and more.",
+      "tag": "mobile_banking_apps"
+  },
+  {
+      "question": "How do mobile banking apps in Nepal ensure security?",
+      "answer": "Mobile banking apps in Nepal use various security measures, including 128-bit SSL encryption, two-factor authentication via OTP, and biometric login options like fingerprint or face recognition. Users are also advised to use strong passwords and monitor their accounts regularly.",
+      "tag": "mobile_banking_security"
+  },
+  {
+      "question": "What is the daily transaction limit for mobile banking in Nepal?",
+      "answer": "According to Nepal Rastra Bank's 2024 directive, the maximum daily transaction limit for mobile banking is Rs 300,000. However, individual banks may set lower per-transaction limits, sometimes as low as Rs 25,000.",
+      "tag": "mobile_banking_limits"
+  },
+  {
+      "question": "What is the difference between mobile banking and digital wallets?",
+      "answer": "Mobile banking involves using a bank's app to access your account directly, while digital wallets like eSewa and Khalti allow you to store money and make payments, often linked to your bank account.",
+      "tag": "mobile_banking_vs_wallets"
+  },
+  {
+      "question": "How do I activate mobile banking on my phone?",
+      "answer": "To activate mobile banking, you typically need to download your bank's app, register with your account details, and verify your identity through OTP or by visiting a branch. The exact process may vary by bank.",
+      "tag": "mobile_banking_activation"
+  },
+  {
+      "question": "Are there fees for using mobile banking in Nepal?",
+      "answer": "Most banks do not charge fees for standard mobile banking transactions like balance checks or fund transfers within the same bank. However, interbank transfers or bill payments may incur fees, depending on the bank.",
+      "tag": "mobile_banking_fees"
+  },
+  {
+      "question": "Can I use mobile banking for international transactions?",
+      "answer": "Mobile banking apps in Nepal primarily support domestic transactions. For international transfers, you may need to use specific remittance services or visit a bank branch.",
+      "tag": "mobile_banking_international"
+  },
+  {
+      "question": "What should I do if I suspect unauthorized access to my mobile banking account?",
+      "answer": "If you suspect unauthorized access, immediately contact your bank's customer service, change your login credentials, and enable any available security features like two-factor authentication.",
+      "tag": "mobile_banking_security"
+  },
+  {
+      "question": "How do I make a QR payment using mobile banking?",
+      "answer": "To make a QR payment, open your mobile banking app, select the QR payment option, scan the merchant's QR code, enter the amount, and confirm the transaction.",
+      "tag": "mobile_banking_qr_payment"
+  },
+  {
+      "question": "Can I pay utility bills through mobile banking?",
+      "answer": "Yes, most mobile banking apps in Nepal allow you to pay utility bills like electricity, water, and internet directly through the app.",
+      "tag": "mobile_banking_utility_payments"
+  },
+  {
+      "question": "What is mobile banking?",
+      "answer": "Mobile banking is the use of a mobile device, such as a smartphone, to perform banking activities like checking account balances, transferring funds, and paying bills.",
+      "tag": "mobile_banking_definition"
+  },
+  {
+      "question": "Can you explain mobile banking?",
+      "answer": "Mobile banking is the use of a mobile device, such as a smartphone, to perform banking activities like checking account balances, transferring funds, and paying bills.",
+      "tag": "mobile_banking_definition"
+  },
+  {
+      "question": "What does mobile banking mean?",
+      "answer": "Mobile banking is the use of a mobile device, such as a smartphone, to perform banking activities like checking account balances, transferring funds, and paying bills.",
+      "tag": "mobile_banking_definition"
+  },
+  {
+      "question": "How has mobile banking grown in Nepal?",
+      "answer": "Mobile banking in Nepal has seen significant growth, with over 18 million users by 2022, driven by increased smartphone penetration and the convenience of digital financial services.",
+      "tag": "mobile_banking_growth_nepal"
+  },
+  {
+      "question": "What are the benefits of mobile banking?",
+      "answer": "Mobile banking offers convenience, 24/7 access to banking services, reduced need for physical branch visits, and often lower transaction costs.",
+      "tag": "mobile_banking_benefits"
+  },
+  {
+      "question": "Why is mobile banking popular in Nepal?",
+      "answer": "Mobile banking is popular in Nepal due to its convenience, the rise of smartphone usage, and the ability to access financial services remotely, especially in rural areas.",
+      "tag": "mobile_banking_popularity_nepal"
+  },
+  {
+      "question": "Which are the most popular mobile banking apps in Nepal?",
+      "answer": "Some popular mobile banking apps in Nepal include NIC Asia MoBank, Nabil nBank, Global IME Smart Plus, eNMB App, and Digi Prabhu App.",
+      "tag": "popular_apps_nepal"
+  },
+  {
+      "question": "What features do mobile banking apps offer?",
+      "answer": "Mobile banking apps typically offer features like fund transfers, bill payments, QR code payments, account management, and sometimes investment options.",
+      "tag": "app_features"
+  },
+  {
+      "question": "Tell me about NIC Asia MoBank.",
+      "answer": "NIC Asia MoBank is a popular mobile banking app in Nepal offering features like fund transfers, bill payments, and QR code payments.",
+      "tag": "nic_asia_mobank"
+  },
+  {
+      "question": "What is Nabil nBank?",
+      "answer": "Nabil nBank is the mobile banking app of Nabil Bank, providing services such as account management, transfers, and investment options.",
+      "tag": "nabil_nbank"
+  },
+  {
+      "question": "Which banks in Nepal offer the best mobile banking services?",
+      "answer": "Banks like NIC Asia, Nabil Bank, and Global IME are known for their robust mobile banking apps with features like QR payments, bill payments, and fund transfers.",
+      "tag": "best_banks_mobile_banking"
+  },
+  {
+      "question": "How do mobile banking apps ensure security?",
+      "answer": "Mobile banking apps use various security measures such as encryption, two-factor authentication, biometric login, and regular security updates.",
+      "tag": "security_measures"
+  },
+  {
+      "question": "What should users do to keep their mobile banking secure?",
+      "answer": "Users should use strong passwords, enable two-factor authentication, avoid public Wi-Fi for banking, and regularly update their apps.",
+      "tag": "user_security_tips"
+  },
+  {
+      "question": "Is mobile banking safe?",
+      "answer": "Yes, mobile banking is safe when proper security measures like encryption, two-factor authentication, and biometric login are used, along with user vigilance.",
+      "tag": "mobile_banking_safety"
+  },
+  {
+      "question": "What is two-factor authentication in mobile banking?",
+      "answer": "Two-factor authentication requires two forms of verification, such as a password and an OTP, to access your account.",
+      "tag": "two_factor_authentication"
+  },
+  {
+      "question": "How does encryption protect my mobile banking data?",
+      "answer": "Encryption scrambles your data, making it unreadable to unauthorized parties, ensuring secure transmission.",
+      "tag": "encryption"
+  },
+  {
+      "question": "What is biometric authentication in mobile banking?",
+      "answer": "Biometric authentication uses your fingerprint or face recognition to securely log in to your mobile banking app.",
+      "tag": "biometric_authentication"
+  },
+  {
+      "question": "How do banks detect fraud in mobile banking?",
+      "answer": "Banks use AI and machine learning to monitor transactions for unusual patterns and alert users or block suspicious activities.",
+      "tag": "fraud_detection"
+  },
+  {
+      "question": "What should I do if I suspect fraud on my mobile banking account?",
+      "answer": "Immediately contact your bank, freeze your account, and follow their instructions to secure your account and investigate the issue.",
+      "tag": "fraud_response"
+  },
+  {
+      "question": "What is the daily transaction limit for mobile banking in Nepal?",
+      "answer": "As per Nepal Rastra Bank's 2024 directive, the maximum daily transaction limit for mobile banking is Rs 300,000, but banks may set lower limits.",
+      "tag": "transaction_limits"
+  },
+  {
+      "question": "Why are there transaction limits in mobile banking?",
+      "answer": "Transaction limits help manage risk, prevent fraud, and comply with regulatory requirements.",
+      "tag": "purpose_of_limits"
+  },
+  {
+      "question": "Can I increase my mobile banking transaction limit?",
+      "answer": "Some banks allow you to request a higher limit, but it depends on your account type and the bank's policies.",
+      "tag": "increase_transaction_limit"
+  },
+  {
+      "question": "How do I activate mobile banking?",
+      "answer": "To activate mobile banking, download your bank's app, register with your account details, and follow the verification process, which may include OTP or branch visit.",
+      "tag": "activation_process"
+  },
+  {
+      "question": "Steps to activate mobile banking",
+      "answer": "To activate mobile banking, download your bank's app, register with your account details, and follow the verification process, which may include OTP or branch visit.",
+      "tag": "activation_process"
+  },
+  {
+      "question": "Guide to setting up mobile banking",
+      "answer": "To activate mobile banking, download your bank's app, register with your account details, and follow the verification process, which may include OTP or branch visit.",
+      "tag": "activation_process"
+  },
+  {
+      "question": "Are there fees for using mobile banking?",
+      "answer": "Most banks do not charge for standard transactions, but some services like interbank transfers may have fees. Check with your bank.",
+      "tag": "mobile_banking_fees"
+  },
+  {
+      "question": "How do I transfer funds using mobile banking?",
+      "answer": "Open your banking app, select 'Transfer Funds', choose the recipient, enter the amount, and confirm the transaction with your PIN or OTP.",
+      "tag": "fund_transfer_process"
+  },
+  {
+      "question": "Steps to send money via mobile banking",
+      "answer": "Open your banking app, select 'Transfer Funds', choose the recipient, enter the amount, and confirm the transaction with your PIN or OTP.",
+      "tag": "fund_transfer_process"
+  },
+  {
+      "question": "How can I pay bills through mobile banking?",
+      "answer": "In your banking app, go to 'Bill Payments', select the biller, enter the required details, and confirm the payment.",
+      "tag": "bill_payment_process"
+  },
+  {
+      "question": "Guide to paying utility bills via mobile banking",
+      "answer": "In your banking app, go to 'Bill Payments', select the biller, enter the required details, and confirm the payment.",
+      "tag": "bill_payment_process"
+  },
+  {
+      "question": "Can I use mobile banking for international transactions?",
+      "answer": "Mobile banking apps in Nepal primarily support domestic transactions. For international transfers, you may need to use specific remittance services or visit a bank branch.",
+      "tag": "international_transactions"
+  },
+  {
+      "question": "How do I make a QR payment using mobile banking?",
+      "answer": "Open your banking app, select the QR payment option, scan the merchant's QR code, enter the amount, and confirm the transaction.",
+      "tag": "qr_payment_process"
+  },
+  {
+      "question": "Can I pay utility bills through mobile banking?",
+      "answer": "Yes, most mobile banking apps in Nepal allow you to pay utility bills like electricity, water, and internet directly through the app.",
+      "tag": "utility_bill_payments"
+  },
+  {
+      "question": "What should I do if the mobile banking app is not working?",
+      "answer": "Try restarting the app, checking your internet connection, or updating to the latest version. If issues persist, contact your bank's support.",
+      "tag": "app_troubleshooting"
+  },
+  {
+      "question": "How do I contact customer support through mobile banking?",
+      "answer": "Most apps have a 'Help' or 'Support' section where you can chat with a representative or call a helpline.",
+      "tag": "customer_support"
+  },
+  {
+      "question": "What is a digital wallet?",
+      "answer": "A digital wallet is an app that stores payment information and allows users to make electronic transactions, often linked to a bank account.",
+      "tag": "digital_wallet_definition"
+  },
+  {
+      "question": "How do digital wallets work in Nepal?",
+      "answer": "Digital wallets like eSewa and Khalti allow users to load funds from their bank accounts and make payments, transfers, or bill payments electronically.",
+      "tag": "digital_wallets_nepal"
+  },
+  {
+      "question": "What is eSewa and how does it work?",
+      "answer": "eSewa is a popular digital wallet in Nepal that allows users to make payments, transfer money, and pay bills by loading funds from their bank account.",
+      "tag": "esewa"
+  },
+  {
+      "question": "How does Khalti differ from other digital wallets?",
+      "answer": "Khalti focuses on user-friendly features and integrates with various services, making it a versatile choice for digital payments in Nepal.",
+      "tag": "khalti"
+  },
+  {
+      "question": "How do I link my bank account to a digital wallet in Nepal?",
+      "answer": "Open your digital wallet app, go to the 'Link Bank Account' section, select your bank, enter account details, and verify with OTP or bank credentials.",
+      "tag": "link_bank_to_wallet"
+  },
+  {
+      "question": "What's the difference between mobile banking and digital wallets?",
+      "answer": "Mobile banking involves using a bank's app to access your account directly, while digital wallets like eSewa and Khalti allow you to store money and make payments, often linked to your bank account.",
+      "tag": "mobile_banking_vs_wallets"
+  },
+  {
+      "question": "What is the role of Nepal Rastra Bank in mobile banking?",
+      "answer": "Nepal Rastra Bank regulates mobile banking by setting transaction limits, security standards, and licensing requirements for banks.",
+      "tag": "regulatory_role"
+  },
+  {
+      "question": "How does NRB ensure the safety of mobile banking?",
+      "answer": "NRB mandates security protocols, conducts audits, and enforces compliance with anti-money laundering and data protection laws.",
+      "tag": "safety_measures"
+  },
+  {
+      "question": "What is connectIPS used for?",
+      "answer": "connectIPS is a Nepal-based system for fast, secure online payments and inter-bank transfers.",
+      "tag": "connectips"
+  },
+  {
+      "question": "How do I use connectIPS for payments?",
+      "answer": "Link your bank account to connectIPS, log in, select the payee, and authorize the transfer.",
+      "tag": "connectips_usage"
+  },
+  {
+      "question": "How does mobile banking promote financial inclusion in Nepal?",
+      "answer": "Mobile banking brings financial services to remote areas, allowing unbanked populations to access banking without physical branches.",
+      "tag": "financial_inclusion"
+  },
+  {
+      "question": "What challenges hinder mobile banking adoption in rural Nepal?",
+      "answer": "Challenges include poor internet connectivity, low digital literacy, and limited access to smartphones.",
+      "tag": "adoption_challenges"
+  },
+  {
+      "question": "How is Nepal promoting financial inclusion through mobile banking?",
+      "answer": "Through initiatives like subsidized digital services, partnerships with telecoms, and educational campaigns to increase digital literacy.",
+      "tag": "financial_inclusion_initiatives"
+  },
+  {
+      "question": "What is the impact of AI on mobile banking?",
+      "answer": "AI enhances mobile banking with features like personalized financial advice, fraud detection, and automated customer support.",
+      "tag": "ai_in_banking"
+  },
+  {
+      "question": "How might blockchain technology affect mobile banking?",
+      "answer": "Blockchain could improve security, reduce transaction costs, and enable faster cross-border payments in mobile banking.",
+      "tag": "blockchain_potential"
+  },
+  {
+      "question": "What are the future trends in mobile banking?",
+      "answer": "Future trends include increased use of AI for personalization, blockchain for security, and integration with global payment systems.",
+      "tag": "future_trends"
+  },
+  {
+      "question": "How can mobile banking benefit students?",
+      "answer": "Students can use mobile banking for fee payments, receiving allowances, and managing small budgets conveniently.",
+      "tag": "student_benefits"
+  },
+  {
+      "question": "What features are useful for small businesses in mobile banking?",
+      "answer": "Features like QR payments, instant transfers, and loan applications support small businesses in managing finances efficiently.",
+      "tag": "business_features"
+  },
+  {
+      "question": "Is mobile banking suitable for senior citizens?",
+      "answer": "Yes, many apps offer simple interfaces, voice commands, and customer support to assist seniors in using mobile banking.",
+      "tag": "mobile_banking_seniors"
+  },
+  {
+      "question": "How does mobile banking cater to visually impaired users?",
+      "answer": "Apps include features like screen readers, voice navigation, and high-contrast modes to make mobile banking accessible.",
+      "tag": "accessibility_features"
+  },
+  {
+      "question": "How has mobile banking influenced Nepal's economy?",
+      "answer": "Mobile banking has boosted digital transactions, supported small businesses, and increased financial access, contributing to economic growth.",
+      "tag": "economic_impact"
+  },
+  {
+      "question": "What social benefits does mobile banking offer?",
+      "answer": "It empowers marginalized groups, reduces cash dependency, and facilitates quick fund transfers during emergencies.",
+      "tag": "social_benefits"
+  },
+  {
+      "question": "Does mobile banking have environmental benefits?",
+      "answer": "Yes, it reduces the need for paper statements and physical transactions, contributing to environmental sustainability.",
+      "tag": "environmental_impact"
+  },
+  {
+      "question": "How does mobile banking promote financial literacy?",
+      "answer": "Apps often provide educational resources, spending trackers, and alerts to help users manage their finances better.",
+      "tag": "financial_literacy"
+  },
+  {
+      "question": "Can I open a new account via mobile banking?",
+      "answer": "Some banks offer the option to open new accounts through their mobile apps, often with video KYC verification.",
+      "tag": "account_opening"
+  },
+  {
+      "question": "How do I apply for a loan through mobile banking?",
+      "answer": "In your banking app, navigate to the 'Loans' section, select the type of loan, fill out the application form, and submit required documents.",
+      "tag": "loan_application_process"
+  },
+  {
+      "question": "Can I use mobile banking while traveling abroad?",
+      "answer": "Yes, as long as you have internet access, you can use mobile banking from anywhere, but inform your bank to avoid security flags.",
+      "tag": "international_use"
+  },
+  {
+      "question": "How can I view my transaction history in mobile banking?",
+      "answer": "Go to the 'Account' or 'Transactions' section in the app to see a list of your recent activities.",
+      "tag": "transaction_history"
+  },
+  {
+      "question": "Can I download my transaction statements from the app?",
+      "answer": "Yes, most apps allow you to download or email your transaction statements in PDF format.",
+      "tag": "statement_download"
+  },
+  {
+      "question": "What are push notifications in mobile banking?",
+      "answer": "Push notifications are alerts sent to your phone about account activities, such as deposits, withdrawals, or security alerts.",
+      "tag": "push_notifications"
+  },
+  {
+      "question": "How do I manage notification settings in my banking app?",
+      "answer": "Go to the 'Settings' or 'Preferences' section in the app to customize which notifications you receive.",
+      "tag": "notification_settings"
+  },
+  {
+      "question": "What types of accounts can I manage with mobile banking?",
+      "answer": "You can manage savings accounts, current accounts, fixed deposits, and sometimes investment accounts through mobile banking.",
+      "tag": "account_types"
+  },
+  {
+      "question": "Is mobile banking user-friendly?",
+      "answer": "Most mobile banking apps are designed to be intuitive, with simple navigation and clear instructions for users.",
+      "tag": "user_experience"
+  },
+  {
+      "question": "Can I customize my mobile banking app?",
+      "answer": "Many apps allow customization, such as setting favorite transactions, changing themes, or arranging dashboard widgets.",
+      "tag": "customization_options"
+  },
+  {
+      "question": "How do I protect myself from mobile banking fraud?",
+      "answer": "Use strong passwords, enable two-factor authentication, avoid sharing personal information, and monitor your account regularly.",
+      "tag": "fraud_protection"
+  },
+  {
+      "question": "What are the common issues faced in mobile banking and how to resolve them?",
+      "answer": "Common issues include login problems, transaction failures, and app crashes. Resolve them by checking internet connection, updating the app, or contacting bank support.",
+      "tag": "common_issues"
+  },
+  {
+      "question": "How does mobile banking compare to traditional banking?",
+      "answer": "Mobile banking offers convenience, 24/7 access, and often lower fees, while traditional banking provides in-person services and may be preferred for complex transactions.",
+      "tag": "mobile_vs_traditional"
+  },
+  {
+      "question": "What are the advantages of mobile banking over traditional banking?",
+      "answer": "Mobile banking offers convenience, 24/7 access, and often lower fees compared to traditional banking.",
+      "tag": "mobile_vs_traditional"
+  },
+  {
+      "question": "Can I use mobile banking for investments?",
+      "answer": "Some mobile banking apps allow users to invest in stocks, mutual funds, or fixed deposits directly through the app.",
+      "tag": "investment_options"
+  },
+  {
+      "question": "Can I buy insurance through mobile banking?",
+      "answer": "Some banks offer insurance products through their mobile apps, allowing you to purchase and manage policies.",
+      "tag": "insurance_services"
+  },
+  {
+      "question": "What is the difference between eSewa and mobile banking?",
+      "answer": "eSewa is a digital wallet for payments, while mobile banking is a full banking service provided by banks.",
+      "tag": "esewa_vs_mobile_banking"
+  },
+  {
+      "question": "How do I enable biometric login on my banking app?",
+      "answer": "Go to security settings in the app and register your fingerprint or face for secure, password-free login.",
+      "tag": "biometric_setup"
+  },
+  {
+      "question": "What is the adoption rate of mobile banking in Nepal?",
+      "answer": "It's growing rapidly, with over 50% of banked adults using mobile banking by 2023, according to NRB estimates.",
+      "tag": "adoption_rate"
+  },
+  {
+      "question": "What is the future of mobile banking in Nepal?",
+      "answer": "Expect more AI features, wider rural reach, and integration with global payment systems.",
+      "tag": "future_of_mobile_banking"
+  },
+  {
+      "question": "What's electronic banking all about?",
+      "answer": "eBanking (electronic banking) refers to all electronic banking services including internet banking, mobile banking, and SMS banking. In Nepal, eBanking has grown significantly, allowing customers to perform banking operations remotely without visiting physical branches.",
+      "tag": "ebanking"
+  },
+  {
+      "question": "Is eBanking the same as online banking?",
+      "answer": "eBanking (electronic banking) refers to all electronic banking services including internet banking, mobile banking, and SMS banking. In Nepal, eBanking has grown significantly, allowing customers to perform banking operations remotely without visiting physical branches.",
+      "tag": "ebanking"
+  },
+  {
+      "question": "What's a check in banking?",
+      "answer": "A cheque is a written document that orders a bank to pay a specific amount of money from a person's account to the person named on the cheque. Although digital payments are increasing in Nepal, cheques are still commonly used for business transactions and large payments.",
+      "tag": "cheque"
+  },
+  {
+      "question": "How does a cheque work?",
+      "answer": "A cheque is a written document that orders a bank to pay a specific amount of money from a person's account to the person named on the cheque. Although digital payments are increasing in Nepal, cheques are still commonly used for business transactions and large payments.",
+      "tag": "cheque"
+  },
+  {
+      "question": "What does IBFT mean in banking?",
+      "answer": "IBFT (Inter-Bank Fund Transfer) is a service that allows customers to transfer funds from their account to an account in another bank. In Nepal, IBFT is facilitated through various systems including connectIPS and can be initiated through mobile banking applications.",
+      "tag": "ibft"
+  },
+  {
+      "question": "How do I use IBFT to send money?",
+      "answer": "IBFT (Inter-Bank Fund Transfer) is a service that allows customers to transfer funds from their account to an account in another bank. In Nepal, IBFT is facilitated through various systems including connectIPS and can be initiated through mobile banking applications.",
+      "tag": "ibft"
+  },
+  {
+      "question": "What's a digital wallet on my phone?",
+      "answer": "A mobile wallet is a digital application that stores payment information and allows users to make payments using their mobile devices. Popular mobile wallets in Nepal include eSewa, Khalti, IME Pay, and others, which facilitate bill payments, fund transfers, and merchant payments.",
+      "tag": "mobile_wallet"
+  },
+  {
+      "question": "Is a mobile wallet like a bank app?",
+      "answer": "A mobile wallet is a digital application that stores payment information and allows users to make payments using their mobile devices. Popular mobile wallets in Nepal include eSewa, Khalti, IME Pay, and others, which facilitate bill payments, fund transfers, and merchant payments.",
+      "tag": "mobile_wallet"
+  },
+  {
+      "question": "What's paying with a QR code?",
+      "answer": "QR payment involves scanning a QR (Quick Response) code using a mobile banking app or digital wallet to make payments. In Nepal, QR payments have become increasingly popular for merchant payments, offering a convenient alternative to cash and card transactions.",
+      "tag": "qr_payment"
+  },
+  {
+      "question": "How do QR codes work for payments?",
+      "answer": "QR payment involves scanning a QR (Quick Response) code using a mobile banking app or digital wallet to make payments. In Nepal, QR payments have become increasingly popular for merchant payments, offering a convenient alternative to cash and card transactions.",
+      "tag": "qr_payment"
+  },
+  {
+      "question": "What does KYC mean for banks?",
+      "answer": "KYC (Know Your Customer) is a process by which banks obtain information about the identity and address of customers. In Nepal, KYC documentation typically includes citizenship certificates, passport, or other government-issued identification and proof of address.",
+      "tag": "kyc"
+  },
+  {
+      "question": "Why do I need KYC to open an account?",
+      "answer": "KYC (Know Your Customer) is a process by which banks obtain information about the identity and address of customers. In Nepal, KYC documentation typically includes citizenship certificates, passport, or other government-issued identification and proof of address.",
+      "tag": "kyc"
+  },
+  {
+      "question": "What's 2FA in banking?",
+      "answer": "Two-factor authentication (2FA) is a security process that requires two different forms of identification to access an account. In Nepali banking, this typically includes a password plus an OTP sent to the registered mobile number.",
+      "tag": "two_factor_authentication"
+  },
+  {
+      "question": "How does two-step login work?",
+      "answer": "Two-factor authentication (2FA) is a security process that requires two different forms of identification to access an account. In Nepali banking, this typically includes a password plus an OTP sent to the registered mobile number.",
+      "tag": "two_factor_authentication"
+  },
+  {
+      "question": "What's eSewa used for?",
+      "answer": "eSewa is one of Nepal's largest digital wallets and payment service providers. It allows users to transfer money, pay bills, recharge mobile balance, and make merchant payments through their mobile phones or the web.",
+      "tag": "esewa"
+  },
+  {
+      "question": "Is eSewa a banking app?",
+      "answer": "eSewa is one of Nepal's largest digital wallets and payment service providers. It allows users to transfer money, pay bills, recharge mobile balance, and make merchant payments through their mobile phones or the web.",
+      "tag": "esewa"
+  },
+  {
+      "question": "What does banking on my phone mean?",
+      "answer": "Mobile banking is the use of a mobile device, such as a smartphone, to perform banking activities like checking account balances, transferring funds, and paying bills. In Nepal, mobile banking has grown rapidly due to increased smartphone penetration and the push for digital financial services.",
+      "tag": "mobile_banking"
+  },
+  {
+      "question": "Is mobile banking just an app?",
+      "answer": "Mobile banking is the use of a mobile device, such as a smartphone, to perform banking activities like checking account balances, transferring funds, and paying bills. In Nepal, mobile banking has grown rapidly due to increased smartphone penetration and the push for digital financial services.",
+      "tag": "mobile_banking"
+  },
+  {
+      "question": "How do I start using mobile banking?",
+      "answer": "To activate mobile banking, you typically need to download your bank's app, register with your account details, and verify your identity through OTP or by visiting a branch. The exact process may vary by bank.",
+      "tag": "mobile_banking_activation"
+  },
+  {
+      "question": "What's the process to set up banking on my phone?",
+      "answer": "To activate mobile banking, you typically need to download your bank's app, register with your account details, and verify your identity through OTP or by visiting a branch. The exact process may vary by bank.",
+      "tag": "mobile_banking_activation"
+  },
+  {
+      "question": "What is connectIPS?",
+      "answer": "connectIPS is an e-payment system established as a single payments platform to allow the bank customers for fund transfer and service payments from various channels. The payment transactions are processed directly from/to the bank accounts and the transactions are normally immediate at the sender and receiver. The system is available 24x7 through alternate channels of the web (www.connectips.com), mobile App and payment process/ gateway. This can also be accessed from the mobile/internet banking of major banks & financial institutions and App/Web of various mobile wallets.",
+      "tag": "definition"
+  },
+  {
+      "question": "What's connectIPS for?",
+      "answer": "connectIPS is an e-payment system established as a single payments platform to allow the bank customers for fund transfer and service payments from various channels. The payment transactions are processed directly from/to the bank accounts and the transactions are normally immediate at the sender and receiver. The system is available 24x7 through alternate channels of the web (www.connectips.com), mobile App and payment process/ gateway. This can also be accessed from the mobile/internet banking of major banks & financial institutions and App/Web of various mobile wallets.",
+      "tag": "definition"
+  },
+  {
+      "question": "Is connectIPS like eSewa?",
+      "answer": "connectIPS is an e-payment system established as a single payments platform to allow the bank customers for fund transfer and service payments from various channels. The payment transactions are processed directly from/to the bank accounts and the transactions are normally immediate at the sender and receiver. The system is available 24x7 through alternate channels of the web (www.connectips.com), mobile App and payment process/ gateway. This can also be accessed from the mobile/internet banking of major banks & financial institutions and App/Web of various mobile wallets.",
+      "tag": "definition"
+  },
+  {
+      "question": "What keeps mobile banking safe in Nepal?",
+      "answer": "Mobile banking apps in Nepal use various security measures, including 128-bit SSL encryption, two-factor authentication via OTP, and biometric login options like fingerprint or face recognition. Users are also advised to use strong passwords and monitor their accounts regularly.",
+      "tag": "mobile_banking_security"
+  },
+  {
+      "question": "How is my phone banking protected?",
+      "answer": "Mobile banking apps in Nepal use various security measures, including 128-bit SSL encryption, two-factor authentication via OTP, and biometric login options like fingerprint or face recognition. Users are also advised to use strong passwords and monitor their accounts regularly.",
+      "tag": "mobile_banking_security"
+  },
+  {
+      "question": "How much can I send daily with mobile banking?",
+      "answer": "According to Nepal Rastra Bank's 2024 directive, the maximum daily transaction limit for mobile banking is Rs 300,000. However, individual banks may set lower per-transaction limits, sometimes as low as Rs 25,000.",
+      "tag": "mobile_banking_limits"
+  },
+  {
+      "question": "What's the max limit for mobile banking transfers?",
+      "answer": "According to Nepal Rastra Bank's 2024 directive, the maximum daily transaction limit for mobile banking is Rs 300,000. However, individual banks may set lower per-transaction limits, sometimes as low as Rs 25,000.",
+      "tag": "mobile_banking_limits"
+  },
+  {
+      "question": "Why should I use mobile banking?",
+      "answer": "Mobile banking offers convenience, 24/7 access to banking services, reduced need for physical branch visits, and often lower transaction costs.",
+      "tag": "mobile_banking_benefits"
+  },
+  {
+      "question": "What's good about banking on my phone?",
+      "answer": "Mobile banking offers convenience, 24/7 access to banking services, reduced need for physical branch visits, and often lower transaction costs.",
+      "tag": "mobile_banking_benefits"
+  },
+  {
+      "question": "How can I send money with my banking app?",
+      "answer": "Open your banking app, select 'Transfer Funds', choose the recipient, enter the amount, and confirm the transaction with your PIN or OTP.",
+      "tag": "fund_transfer_process"
+  },
+  {
+      "question": "What's the way to move money in mobile banking?",
+      "answer": "Open your banking app, select 'Transfer Funds', choose the recipient, enter the amount, and confirm the transaction with your PIN or OTP.",
+      "tag": "fund_transfer_process"
+  },
+  {
+      "question": "What's an e-wallet?",
+      "answer": "A digital wallet is an app that stores payment information and allows users to make electronic transactions, often linked to a bank account.",
+      "tag": "digital_wallet_definition"
+  },
+  {
+      "question": "Is a digital wallet the same as mobile banking?",
+      "answer": "A digital wallet is an app that stores payment information and allows users to make electronic transactions, often linked to a bank account.",
+      "tag": "digital_wallet_definition"
+  },
+  {
+      "question": "How does phone banking help people in Nepal?",
+      "answer": "Mobile banking brings financial services to remote areas, allowing unbanked populations to access banking without physical branches.",
+      "tag": "financial_inclusion"
+  },
+  {
+      "question": "Why is mobile banking good for rural Nepal?",
+      "answer": "Mobile banking brings financial services to remote areas, allowing unbanked populations to access banking without physical branches.",
+      "tag": "financial_inclusion"
+  },
+  {
+      "question": "What's next for mobile banking?",
+      "answer": "Future trends include increased use of AI for personalization, blockchain for security, and integration with global payment systems.",
+      "tag": "future_trends"
+  },
+  {
+      "question": "How will mobile banking change in the future?",
+      "answer": "Future trends include increased use of AI for personalization, blockchain for security, and integration with global payment systems.",
+      "tag": "future_trends"
+  },
+  {
+      "question": "Can I get a loan from my banking app?",
+      "answer": "In your banking app, navigate to the 'Loans' section, select the type of loan, fill out the application form, and submit required documents.",
+      "tag": "loan_application_process"
+  },
+  {
+      "question": "What's the process to borrow money via mobile banking?",
+      "answer": "In your banking app, navigate to the 'Loans' section, select the type of loan, fill out the application form, and submit required documents.",
+      "tag": "loan_application_process"
+  }
 ]

@@ -1,0 +1,1408 @@
+{
+    "branches": [
+      {
+        "id": 0,
+        "name": "Aamchowk",
+        "latitude": 26.9768,
+        "longitude": 86.97901
+      },
+      {
+        "id": 1,
+        "name": "Adarsha Kotwal",
+        "latitude": 26.947179,
+        "longitude": 85.129861
+      },
+      {
+        "id": 2,
+        "name": "Amarpath",
+        "latitude": 27.70148,
+        "longitude": 83.464486
+      },
+      {
+        "id": 3,
+        "name": "Anamnagar",
+        "latitude": 27.69641481,
+        "longitude": 85.32831324
+      },
+      {
+        "id": 4,
+        "name": "Attariya",
+        "latitude": 28.812425,
+        "longitude": 80.54908
+      },
+      {
+        "id": 5,
+        "name": "B.P. Chowk",
+        "latitude": 28.059975,
+        "longitude": 81.618013
+      },
+      {
+        "id": 6,
+        "name": "Bagar",
+        "latitude": 28.19065804,
+        "longitude": 83.96348555
+      },
+      {
+        "id": 7,
+        "name": "Baglung",
+        "latitude": 28.26812,
+        "longitude": 83.599314
+      },
+      {
+        "id": 8,
+        "name": "Bahudarmai",
+        "latitude": 27.101151,
+        "longitude": 84.842062
+      },
+      {
+        "id": 9,
+        "name": "Balkot",
+        "latitude": 27.665054,
+        "longitude": 85.366562
+      },
+      {
+        "id": 10,
+        "name": "Baluwakhani",
+        "latitude": 27.743354,
+        "longitude": 85.354866
+      },
+      {
+        "id": 11,
+        "name": "Banepa",
+        "latitude": 27.630022,
+        "longitude": 85.523697
+      },
+      {
+        "id": 12,
+        "name": "Bansgadhi",
+        "latitude": 28.24369,
+        "longitude": 81.51723
+      },
+      {
+        "id": 13,
+        "name": "Bardaghat",
+        "latitude": 27.556454,
+        "longitude": 83.788404
+      },
+      {
+        "id": 14,
+        "name": "Bardibas",
+        "latitude": 26.9905203,
+        "longitude": 85.8932189
+      },
+      {
+        "id": 15,
+        "name": "Battar",
+        "latitude": 27.8980198,
+        "longitude": 85.1442626
+      },
+      {
+        "id": 16,
+        "name": "Bauniya",
+        "latitude": 28.65832426,
+        "longitude": 81.04814628
+      },
+      {
+        "id": 17,
+        "name": "Beltar",
+        "latitude": 26.81302789,
+        "longitude": 86.87834644
+      },
+      {
+        "id": 18,
+        "name": "Beni",
+        "latitude": 28.345511,
+        "longitude": 83.566839
+      },
+      {
+        "id": 19,
+        "name": "Besishahar",
+        "latitude": 28.230484,
+        "longitude": 84.377219
+      },
+      {
+        "id": 20,
+        "name": "Bhairahawa",
+        "latitude": 27.50837683,
+        "longitude": 83.45143368
+      },
+      {
+        "id": 21,
+        "name": "Bhaisepati",
+        "latitude": 27.65298,
+        "longitude": 85.30546
+      },
+      {
+        "id": 22,
+        "name": "Bharatpur",
+        "latitude": 27.68333,
+        "longitude": 84.43333
+      },
+      {
+        "id": 23,
+        "name": "Bidhyapati Chowk",
+        "latitude": 26.71993,
+        "longitude": 85.92916
+      },
+      {
+        "id": 24,
+        "name": "Binayi Triveni",
+        "latitude": 27.583496,
+        "longitude": 83.870262
+      },
+      {
+        "id": 25,
+        "name": "Biratchowk",
+        "latitude": 26.6698912,
+        "longitude": 87.3803998
+      },
+      {
+        "id": 26,
+        "name": "Biratnagar",
+        "latitude": 26.46397,
+        "longitude": 87.28417
+      },
+      {
+        "id": 27,
+        "name": "Birauta",
+        "latitude": 28.1920257,
+        "longitude": 83.9687426
+      },
+      {
+        "id": 28,
+        "name": "Birgunj",
+        "latitude": 27.02172599,
+        "longitude": 84.88882642
+      },
+      {
+        "id": 29,
+        "name": "Birtamod",
+        "latitude": 26.64059399,
+        "longitude": 87.9911935
+      },
+      {
+        "id": 30,
+        "name": "Bode",
+        "latitude": 27.6958,
+        "longitude": 85.3941
+      },
+      {
+        "id": 31,
+        "name": "Bouddha",
+        "latitude": 27.7202,
+        "longitude": 85.3602
+      },
+      {
+        "id": 32,
+        "name": "Buddha Chowk",
+        "latitude": 28.20590481,
+        "longitude": 83.99425719
+      },
+      {
+        "id": 33,
+        "name": "Budiganga",
+        "latitude": 29.364636,
+        "longitude": 81.344215
+      },
+      {
+        "id": 34,
+        "name": "Butwal",
+        "latitude": 27.68940333,
+        "longitude": 83.46494333
+      },
+      {
+        "id": 35,
+        "name": "Campus Chowk",
+        "latitude": 28.697951,
+        "longitude": 80.605222
+      },
+      {
+        "id": 36,
+        "name": "Chabahil",
+        "latitude": 27.716944,
+        "longitude": 85.347714
+      },
+      {
+        "id": 37,
+        "name": "Chandragadhi",
+        "latitude": 26.56829833,
+        "longitude": 88.06820167
+      },
+      {
+        "id": 38,
+        "name": "Chandrapur",
+        "latitude": 27.118864,
+        "longitude": 85.35939
+      },
+      {
+        "id": 39,
+        "name": "Chandrauta",
+        "latitude": 27.649107,
+        "longitude": 82.864922
+      },
+      {
+        "id": 40,
+        "name": "Chapagaun",
+        "latitude": 27.596551,
+        "longitude": 85.323113
+      },
+      {
+        "id": 41,
+        "name": "Charikot",
+        "latitude": 27.6625706,
+        "longitude": 86.0488691
+      },
+      {
+        "id": 42,
+        "name": "Chipledhunga",
+        "latitude": 28.22450175,
+        "longitude": 83.98847973
+      },
+      {
+        "id": 43,
+        "name": "Chyamhasingh",
+        "latitude": 27.673653,
+        "longitude": 85.43941
+      },
+      {
+        "id": 44,
+        "name": "Dadeldhura",
+        "latitude": 29.3047779,
+        "longitude": 80.59231339
+      },
+      {
+        "id": 45,
+        "name": "Dailekh",
+        "latitude": 28.84296833,
+        "longitude": 81.70896333
+      },
+      {
+        "id": 46,
+        "name": "Daldale",
+        "latitude": 27.67068,
+        "longitude": 84.19667
+      },
+      {
+        "id": 47,
+        "name": "Damak",
+        "latitude": 26.66551042,
+        "longitude": 87.70410967
+      },
+      {
+        "id": 48,
+        "name": "Damauli",
+        "latitude": 27.97634329,
+        "longitude": 84.26786816
+      },
+      {
+        "id": 49,
+        "name": "Devghat",
+        "latitude": 27.749282,
+        "longitude": 84.433069
+      },
+      {
+        "id": 50,
+        "name": "Devtal",
+        "latitude": 26.950671,
+        "longitude": 85.016245
+      },
+      {
+        "id": 51,
+        "name": "Dhadingbesi",
+        "latitude": 27.911468,
+        "longitude": 84.890189
+      },
+      {
+        "id": 52,
+        "name": "Dhaneshwor",
+        "latitude": 27.751513,
+        "longitude": 85.316644
+      },
+      {
+        "id": 53,
+        "name": "Dhangadhi",
+        "latitude": 28.7045339,
+        "longitude": 80.5667466
+      },
+      {
+        "id": 54,
+        "name": "Dhankuta",
+        "latitude": 26.9702568,
+        "longitude": 87.3436398
+      },
+      {
+        "id": 55,
+        "name": "Dhapasi",
+        "latitude": 27.749769,
+        "longitude": 85.331892
+      },
+      {
+        "id": 56,
+        "name": "Dharan",
+        "latitude": 26.81335296,
+        "longitude": 87.28470225
+      },
+      {
+        "id": 57,
+        "name": "Dudhauli",
+        "latitude": 26.963411,
+        "longitude": 86.284786
+      },
+      {
+        "id": 58,
+        "name": "Duhabi",
+        "latitude": 26.570857,
+        "longitude": 87.279094
+      },
+      {
+        "id": 59,
+        "name": "Dulegauda",
+        "latitude": 28.055575,
+        "longitude": 84.072324
+      },
+      {
+        "id": 60,
+        "name": "Dumre",
+        "latitude": 27.963551,
+        "longitude": 84.409503
+      },
+      {
+        "id": 61,
+        "name": "Gadhi",
+        "latitude": 26.589873,
+        "longitude": 87.215609
+      },
+      {
+        "id": 62,
+        "name": "Gaidakot",
+        "latitude": 27.4219,
+        "longitude": 84.2417
+      },
+      {
+        "id": 63,
+        "name": "Gaighat",
+        "latitude": 26.791351,
+        "longitude": 86.698299
+      },
+      {
+        "id": 64,
+        "name": "Ganeshthan",
+        "latitude": 27.743631,
+        "longitude": 85.312
+      },
+      {
+        "id": 65,
+        "name": "Garuda",
+        "latitude": 26.950615,
+        "longitude": 85.316688
+      },
+      {
+        "id": 66,
+        "name": "Gatthaghar",
+        "latitude": 27.6743,
+        "longitude": 85.3705
+      },
+      {
+        "id": 67,
+        "name": "Gauradaha",
+        "latitude": 26.564451,
+        "longitude": 87.718341
+      },
+      {
+        "id": 68,
+        "name": "Gaushala",
+        "latitude": 26.917764,
+        "longitude": 85.779544
+      },
+      {
+        "id": 69,
+        "name": "Geta Eye Hospital (Extension Counter)",
+        "latitude": 28.7873838,
+        "longitude": 80.5584704
+      },
+      {
+        "id": 70,
+        "name": "Ghorahi",
+        "latitude": 28.039915,
+        "longitude": 82.485695
+      },
+      {
+        "id": 71,
+        "name": "Gokulganga",
+        "latitude": 27.52699,
+        "longitude": 86.18658
+      },
+      {
+        "id": 72,
+        "name": "Golanjor",
+        "latitude": 27.2812097,
+        "longitude": 86.0669193
+      },
+      {
+        "id": 73,
+        "name": "Golbajar",
+        "latitude": 26.792415,
+        "longitude": 86.332135
+      },
+      {
+        "id": 74,
+        "name": "Gongabu",
+        "latitude": 27.7345,
+        "longitude": 85.3104
+      },
+      {
+        "id": 75,
+        "name": "Gorkha Bazar",
+        "latitude": 27.994775,
+        "longitude": 84.625359
+      },
+      {
+        "id": 76,
+        "name": "Gorusinghe",
+        "latitude": 27.660938,
+        "longitude": 83.038559
+      },
+      {
+        "id": 77,
+        "name": "Gwarko B & B (Extension Counter)",
+        "latitude": 27.66466512,
+        "longitude": 85.32988585
+      },
+      {
+        "id": 78,
+        "name": "Hariwan",
+        "latitude": 27.090208,
+        "longitude": 85.550062
+      },
+      {
+        "id": 79,
+        "name": "Hattiban",
+        "latitude": 27.647343,
+        "longitude": 85.336395
+      },
+      {
+        "id": 80,
+        "name": "Hattigauda",
+        "latitude": 27.75705,
+        "longitude": 85.34962
+      },
+      {
+        "id": 81,
+        "name": "Hattisar",
+        "latitude": 27.70996,
+        "longitude": 85.32162833
+      },
+      {
+        "id": 82,
+        "name": "Hemja",
+        "latitude": 28.277649,
+        "longitude": 83.936051
+      },
+      {
+        "id": 83,
+        "name": "Hetauda",
+        "latitude": 27.41856063,
+        "longitude": 85.028539
+      },
+      {
+        "id": 84,
+        "name": "Ichangunarayan",
+        "latitude": 27.716647,
+        "longitude": 85.291884
+      },
+      {
+        "id": 85,
+        "name": "Ilam",
+        "latitude": 26.910093,
+        "longitude": 87.92762
+      },
+      {
+        "id": 86,
+        "name": "Imadole",
+        "latitude": 27.66144,
+        "longitude": 85.343087
+      },
+      {
+        "id": 87,
+        "name": "Inaruwa",
+        "latitude": 26.604436,
+        "longitude": 87.142221
+      },
+      {
+        "id": 88,
+        "name": "Itahari",
+        "latitude": 26.663531,
+        "longitude": 87.275032
+      },
+      {
+        "id": 89,
+        "name": "Janakpur",
+        "latitude": 26.73479708,
+        "longitude": 85.93225619
+      },
+      {
+        "id": 90,
+        "name": "Janakpur Malpot (Extension Counter)",
+        "latitude": 26.7218554,
+        "longitude": 85.932935
+      },
+      {
+        "id": 91,
+        "name": "Jawalakhel",
+        "latitude": 27.674653,
+        "longitude": 85.314235
+      },
+      {
+        "id": 92,
+        "name": "Jitpur",
+        "latitude": 27.687286,
+        "longitude": 83.179231
+      },
+      {
+        "id": 93,
+        "name": "Jorpati",
+        "latitude": 27.7219,
+        "longitude": 85.3757
+      },
+      {
+        "id": 94,
+        "name": "Jumla",
+        "latitude": 29.275543,
+        "longitude": 82.182995
+      },
+      {
+        "id": 95,
+        "name": "Jumri",
+        "latitude": 28.099562,
+        "longitude": 82.849393
+      },
+      {
+        "id": 96,
+        "name": "Kadaghari",
+        "latitude": 27.693506,
+        "longitude": 85.369713
+      },
+      {
+        "id": 97,
+        "name": "Kakarvitta",
+        "latitude": 26.38527,
+        "longitude": 88.0918
+      },
+      {
+        "id": 98,
+        "name": "Kalaiya",
+        "latitude": 27.032968,
+        "longitude": 85.00462
+      },
+      {
+        "id": 99,
+        "name": "Kalanki",
+        "latitude": 27.6946192,
+        "longitude": 85.280499
+      },
+      {
+        "id": 100,
+        "name": "Kalimati",
+        "latitude": 27.698591,
+        "longitude": 85.3004578
+      },
+      {
+        "id": 101,
+        "name": "Kalopul",
+        "latitude": 27.712178,
+        "longitude": 85.335651
+      },
+      {
+        "id": 102,
+        "name": "Kalyanpur",
+        "latitude": 26.641424,
+        "longitude": 86.624836
+      },
+      {
+        "id": 103,
+        "name": "Kanchanbari",
+        "latitude": 26.486816,
+        "longitude": 87.277492
+      },
+      {
+        "id": 104,
+        "name": "Kantipath",
+        "latitude": 27.7101498,
+        "longitude": 85.31480447
+      },
+      {
+        "id": 105,
+        "name": "Kapan",
+        "latitude": 27.731,
+        "longitude": 85.3565
+      },
+      {
+        "id": 106,
+        "name": "Katari",
+        "latitude": 26.9629423,
+        "longitude": 86.3702141
+      },
+      {
+        "id": 107,
+        "name": "Kawasoti",
+        "latitude": 27.6444456,
+        "longitude": 84.127325
+      },
+      {
+        "id": 108,
+        "name": "Khaireni",
+        "latitude": 27.643629,
+        "longitude": 83.59364
+      },
+      {
+        "id": 109,
+        "name": "Khajura",
+        "latitude": 28.125353,
+        "longitude": 81.57655
+      },
+      {
+        "id": 110,
+        "name": "Khandbari",
+        "latitude": 27.37743411,
+        "longitude": 87.2084321
+      },
+      {
+        "id": 111,
+        "name": "Kirtipur",
+        "latitude": 27.404339,
+        "longitude": 85.1639
+      },
+      {
+        "id": 112,
+        "name": "Kohalpur",
+        "latitude": 28.1943372,
+        "longitude": 81.6881553
+      },
+      {
+        "id": 113,
+        "name": "Kotihawa",
+        "latitude": 27.572435,
+        "longitude": 83.469122
+      },
+      {
+        "id": 114,
+        "name": "Krishnanagar",
+        "latitude": 27.50206457,
+        "longitude": 82.79304266
+      },
+      {
+        "id": 115,
+        "name": "Kshireshwor",
+        "latitude": 26.86416333,
+        "longitude": 85.96302333
+      },
+      {
+        "id": 116,
+        "name": "Kuleshwor",
+        "latitude": 27.688386,
+        "longitude": 85.298584
+      },
+      {
+        "id": 117,
+        "name": "Kumaripati",
+        "latitude": 27.67058731,
+        "longitude": 85.32018044
+      },
+      {
+        "id": 118,
+        "name": "Lahan",
+        "latitude": 26.711515,
+        "longitude": 86.481755
+      },
+      {
+        "id": 119,
+        "name": "Lakeside",
+        "latitude": 28.20956724,
+        "longitude": 83.95652415
+      },
+      {
+        "id": 120,
+        "name": "Lalbandi",
+        "latitude": 27.05234,
+        "longitude": 85.635302
+      },
+      {
+        "id": 121,
+        "name": "Lamahi",
+        "latitude": 27.8736647,
+        "longitude": 82.5196158
+      },
+      {
+        "id": 122,
+        "name": "Lamki",
+        "latitude": 28.62866,
+        "longitude": 81.15089
+      },
+      {
+        "id": 123,
+        "name": "Lazimpat",
+        "latitude": 27.722114,
+        "longitude": 85.321354
+      },
+      {
+        "id": 124,
+        "name": "Lekhnath",
+        "latitude": 28.1630063,
+        "longitude": 84.0577111
+      },
+      {
+        "id": 125,
+        "name": "Lubhu",
+        "latitude": 27.65634772,
+        "longitude": 85.30963167
+      },
+      {
+        "id": 126,
+        "name": "Lukla",
+        "latitude": 27.689526,
+        "longitude": 86.729474
+      },
+      {
+        "id": 127,
+        "name": "Lumbini",
+        "latitude": 27.474089,
+        "longitude": 83.276345
+      },
+      {
+        "id": 128,
+        "name": "Madhavnarayan",
+        "latitude": 26.891533,
+        "longitude": 85.34319
+      },
+      {
+        "id": 129,
+        "name": "Madhyapur Thimi",
+        "latitude": 27.675767,
+        "longitude": 85.397997
+      },
+      {
+        "id": 130,
+        "name": "Maharajgunj",
+        "latitude": 27.77413738,
+        "longitude": 85.35992146
+      },
+      {
+        "id": 131,
+        "name": "Mahendra Chowk",
+        "latitude": 26.454798,
+        "longitude": 87.275094
+      },
+      {
+        "id": 132,
+        "name": "Mahendranagar",
+        "latitude": 28.96680472,
+        "longitude": 80.18154994
+      },
+      {
+        "id": 133,
+        "name": "Makalu",
+        "latitude": 27.556547,
+        "longitude": 87.284265
+      },
+      {
+        "id": 134,
+        "name": "Mangalpur",
+        "latitude": 27.658883,
+        "longitude": 84.371285
+      },
+      {
+        "id": 135,
+        "name": "Manigram",
+        "latitude": 27.503998,
+        "longitude": 83.468858
+      },
+      {
+        "id": 136,
+        "name": "Marchawari",
+        "latitude": 27.4073846,
+        "longitude": 83.2978061
+      },
+      {
+        "id": 137,
+        "name": "Mirchaiya",
+        "latitude": 26.829806,
+        "longitude": 86.253796
+      },
+      {
+        "id": 138,
+        "name": "Mulpani",
+        "latitude": 27.706644,
+        "longitude": 85.394677
+      },
+      {
+        "id": 139,
+        "name": "Murlichowk",
+        "latitude": 27.02511,
+        "longitude": 84.885546
+      },
+      {
+        "id": 140,
+        "name": "Musikot",
+        "latitude": 28.627934,
+        "longitude": 82.458228
+      },
+      {
+        "id": 141,
+        "name": "Namche",
+        "latitude": 27.80472959,
+        "longitude": 86.70966446
+      },
+      {
+        "id": 142,
+        "name": "Naradevi",
+        "latitude": 27.707972,
+        "longitude": 85.306156
+      },
+      {
+        "id": 143,
+        "name": "Narayangarh",
+        "latitude": 27.69355046,
+        "longitude": 84.42329074
+      },
+      {
+        "id": 144,
+        "name": "Narephant",
+        "latitude": 27.674084,
+        "longitude": 85.351679
+      },
+      {
+        "id": 145,
+        "name": "Nayabazar",
+        "latitude": 27.7169,
+        "longitude": 85.3047
+      },
+      {
+        "id": 146,
+        "name": "Nepalgunj",
+        "latitude": 28.06964071,
+        "longitude": 81.62915747
+      },
+      {
+        "id": 147,
+        "name": "Nepaltar",
+        "latitude": 27.7423645,
+        "longitude": 85.3036535
+      },
+      {
+        "id": 148,
+        "name": "New Road",
+        "latitude": 27.70562,
+        "longitude": 85.30963167
+      },
+      {
+        "id": 149,
+        "name": "Newroad Gate",
+        "latitude": 27.7037609,
+        "longitude": 85.3134144
+      },
+      {
+        "id": 150,
+        "name": "Newroad Nepalgunj",
+        "latitude": 28.061413,
+        "longitude": 81.625877
+      },
+      {
+        "id": 151,
+        "name": "Old Baneshwor",
+        "latitude": 27.70123847,
+        "longitude": 85.34034756
+      },
+      {
+        "id": 152,
+        "name": "Padampur",
+        "latitude": 27.684243,
+        "longitude": 84.5059361
+      },
+      {
+        "id": 153,
+        "name": "Palpa",
+        "latitude": 27.8646,
+        "longitude": 83.5464
+      },
+      {
+        "id": 154,
+        "name": "Parasi",
+        "latitude": 27.53080348,
+        "longitude": 83.66734812
+      },
+      {
+        "id": 155,
+        "name": "Parsa",
+        "latitude": 27.612696,
+        "longitude": 84.568228
+      },
+      {
+        "id": 156,
+        "name": "PARSHYANG",
+        "latitude": 28.22514798,
+        "longitude": 83.98022091
+      },
+      {
+        "id": 157,
+        "name": "Patan",
+        "latitude": 27.66466512,
+        "longitude": 85.32988585
+      },
+      {
+        "id": 158,
+        "name": "Pathari",
+        "latitude": 26.660646,
+        "longitude": 87.559617
+      },
+      {
+        "id": 159,
+        "name": "Pharping",
+        "latitude": 27.612559,
+        "longitude": 85.26362
+      },
+      {
+        "id": 160,
+        "name": "Phikkal",
+        "latitude": 26.895363,
+        "longitude": 88.067963
+      },
+      {
+        "id": 161,
+        "name": "Pokhara",
+        "latitude": 28.2109086,
+        "longitude": 83.98447833
+      },
+      {
+        "id": 162,
+        "name": "Putalisadak (Extension Counter)",
+        "latitude": 27.703818,
+        "longitude": 85.322174
+      },
+      {
+        "id": 163,
+        "name": "Putha Uttarganga",
+        "latitude": 28.5840692,
+        "longitude": 82.8200537
+      },
+      {
+        "id": 164,
+        "name": "Rajbiraj",
+        "latitude": 26.539743,
+        "longitude": 86.746339
+      },
+      {
+        "id": 165,
+        "name": "Rajmarga Chowk",
+        "latitude": 26.659535,
+        "longitude": 87.69761
+      },
+      {
+        "id": 166,
+        "name": "Ramananda Chowk",
+        "latitude": 26.735459,
+        "longitude": 85.918296
+      },
+      {
+        "id": 167,
+        "name": "Ramgopalpur",
+        "latitude": 26.820173,
+        "longitude": 85.796398
+      },
+      {
+        "id": 168,
+        "name": "Ramkot",
+        "latitude": 27.723697,
+        "longitude": 85.25398
+      },
+      {
+        "id": 169,
+        "name": "Roshi",
+        "latitude": 27.514949,
+        "longitude": 85.678066
+      },
+      {
+        "id": 170,
+        "name": "Saraswatinagar",
+        "latitude": 27.72255,
+        "longitude": 85.34932
+      },
+      {
+        "id": 171,
+        "name": "Satdobato",
+        "latitude": 27.65677532,
+        "longitude": 85.32198486
+      },
+      {
+        "id": 172,
+        "name": "Sauraha Pharsatikar",
+        "latitude": 27.62933,
+        "longitude": 83.404056
+      },
+      {
+        "id": 173,
+        "name": "Shankhamul",
+        "latitude": 27.68468897,
+        "longitude": 85.33386349
+      },
+      {
+        "id": 174,
+        "name": "Simara",
+        "latitude": 27.16523868,
+        "longitude": 84.97543481
+      },
+      {
+        "id": 175,
+        "name": "Sinamangal (Extension Counter)",
+        "latitude": 27.695647,
+        "longitude": 85.353592
+      },
+      {
+        "id": 176,
+        "name": "Sindhuli",
+        "latitude": 27.20844432,
+        "longitude": 85.91157233
+      },
+      {
+        "id": 177,
+        "name": "Sundhara",
+        "latitude": 27.668789,
+        "longitude": 85.330057
+      },
+      {
+        "id": 178,
+        "name": "Surkhet",
+        "latitude": 28.593155,
+        "longitude": 81.613544
+      },
+      {
+        "id": 179,
+        "name": "Surunga",
+        "latitude": 26.646129,
+        "longitude": 87.891978
+      },
+      {
+        "id": 180,
+        "name": "Suryabinayak",
+        "latitude": 27.6676377,
+        "longitude": 85.4244342
+      },
+      {
+        "id": 181,
+        "name": "Swoyambhu",
+        "latitude": 27.71452544,
+        "longitude": 85.28317953
+      },
+      {
+        "id": 182,
+        "name": "Tandi",
+        "latitude": 27.62379342,
+        "longitude": 84.51054099
+      },
+      {
+        "id": 183,
+        "name": "Taplejung",
+        "latitude": 27.353975,
+        "longitude": 87.666237
+      },
+      {
+        "id": 184,
+        "name": "TAULIHAWA",
+        "latitude": 27.544031,
+        "longitude": 83.053045
+      },
+      {
+        "id": 185,
+        "name": "Thamel",
+        "latitude": 27.7119569,
+        "longitude": 85.3085044
+      },
+      {
+        "id": 186,
+        "name": "Thankot",
+        "latitude": 27.694495,
+        "longitude": 85.217377
+      },
+      {
+        "id": 187,
+        "name": "Tikapur",
+        "latitude": 28.53299949,
+        "longitude": 81.11813441
+      },
+      {
+        "id": 188,
+        "name": "Tinchuli",
+        "latitude": 27.7270236,
+        "longitude": 85.3691953
+      },
+      {
+        "id": 189,
+        "name": "Tinkune",
+        "latitude": 27.68601726,
+        "longitude": 85.344576
+      },
+      {
+        "id": 190,
+        "name": "Tripureshwor",
+        "latitude": 27.69489451,
+        "longitude": 85.31046713
+      },
+      {
+        "id": 191,
+        "name": "Tulsipur",
+        "latitude": 28.13102439,
+        "longitude": 82.29701855
+      },
+      {
+        "id": 192,
+        "name": "Urlabari",
+        "latitude": 26.663101,
+        "longitude": 87.638068
+      },
+      {
+        "id": 193,
+        "name": "Waling",
+        "latitude": 27.984052,
+        "longitude": 83.760524
+      },
+      {
+        "id": 194,
+        "name": "Yashodhara",
+        "latitude": 27.460814,
+        "longitude": 82.995578
+      },
+      {
+        "id": 195,
+        "name": "Yogikuti",
+        "latitude": 27.665869,
+        "longitude": 83.464837
+      }
+    ],
+    "atms": [
+      {"id": 0, "name": "AMARPATH", "latitude": 27.70148, "longitude": 83.464486},
+      {"id": 1, "name": "ANAMNAGAR", "latitude": 27.74646694, "longitude": 85.34565335},
+      {"id": 2, "name": "Army Hospital", "latitude": 28.722306, "longitude": 80.571027},
+      {"id": 3, "name": "ARMY OFFICE", "latitude": 27.7326495, "longitude": 85.32909974},
+      {"id": 4, "name": "ATTARIYA", "latitude": 28.812425, "longitude": 80.54908},
+      {"id": 5, "name": "B.P. CHOWK", "latitude": 28.059975, "longitude": 81.618013},
+      {"id": 6, "name": "BAGAR", "latitude": 28.19065804, "longitude": 83.96348555},
+      {"id": 7, "name": "BAGLUNG", "latitude": 28.26812, "longitude": 83.599314},
+      {"id": 8, "name": "BAHADURMAI", "latitude": 27.09731534, "longitude": 84.84223525},
+      {"id": 9, "name": "BALKOT", "latitude": 27.66683156, "longitude": 85.36515131},
+      {"id": 10, "name": "BALUWAKHANI", "latitude": 27.743354, "longitude": 85.354866},
+      {"id": 11, "name": "BANASTHALI", "latitude": 27.72528477, "longitude": 85.29777338},
+      {"id": 12, "name": "BANEPA", "latitude": 27.630022, "longitude": 85.523697},
+      {"id": 13, "name": "BANSGADHI", "latitude": 28.24369, "longitude": 81.51723},
+      {"id": 14, "name": "BARDAGHAT", "latitude": 27.556454, "longitude": 83.788404},
+      {"id": 15, "name": "BARDIBAS", "latitude": 26.9905203, "longitude": 85.8932189},
+      {"id": 16, "name": "BASANTAPUR", "latitude": 27.70410636, "longitude": 85.30597742},
+      {"id": 17, "name": "BATTAR", "latitude": 27.8980198, "longitude": 85.1442626},
+      {"id": 18, "name": "BAUNIYA", "latitude": 28.65832426, "longitude": 81.04814628},
+      {"id": 19, "name": "BELTAR", "latitude": 26.81302789, "longitude": 86.87834644},
+      {"id": 20, "name": "BENI", "latitude": 28.345511, "longitude": 83.566839},
+      {"id": 21, "name": "BESISAHAR", "latitude": 28.230484, "longitude": 84.377219},
+      {"id": 22, "name": "BHAGWATI BAHAL", "latitude": 27.7160337, "longitude": 85.3115791},
+      {"id": 23, "name": "BHAIRAHAWA", "latitude": 27.50837683, "longitude": 83.45143368},
+      {"id": 24, "name": "BHAISEPATI", "latitude": 27.63847014, "longitude": 85.37200148},
+      {"id": 25, "name": "BHARATPUR", "latitude": 27.68333, "longitude": 84.43333},
+      {"id": 26, "name": "BIDHYAPATI CHOWK", "latitude": 26.71993, "longitude": 85.92916},
+      {"id": 27, "name": "BIRATCHOWK", "latitude": 26.6698912, "longitude": 87.3803998},
+      {"id": 28, "name": "BIRATNAGAR", "latitude": 26.46012704, "longitude": 87.28160814},
+      {"id": 29, "name": "BIRAUTA", "latitude": 28.1920257, "longitude": 83.9687426},
+      {"id": 30, "name": "BIRENDRA MTP CAMPUS", "latitude": 27.68859416, "longitude": 84.43062948},
+      {"id": 31, "name": "BIRGUNJ", "latitude": 27.02172599, "longitude": 84.88882642},
+      {"id": 32, "name": "BIRTAMOD", "latitude": 26.64059399, "longitude": 87.9911935},
+      {"id": 33, "name": "BODE", "latitude": 27.665054, "longitude": 85.366562},
+      {"id": 34, "name": "BOUDDHA", "latitude": 27.72022327, "longitude": 85.36022734},
+      {"id": 35, "name": "BUDDHACHOWK", "latitude": 28.20590481, "longitude": 83.99425719},
+      {"id": 36, "name": "BUDHANILKANTHA", "latitude": 28.20590481, "longitude": 83.99425719},
+      {"id": 37, "name": "BUDIGANGA", "latitude": 29.35874753, "longitude": 81.33765623},
+      {"id": 38, "name": "BUTWAL", "latitude": 27.68940333, "longitude": 83.46494333},
+      {"id": 39, "name": "BUTWAL AMDA", "latitude": 27.6912461, "longitude": 83.4798579},
+      {"id": 40, "name": "CAMPUS CHOWK", "latitude": 28.697951, "longitude": 80.605222},
+      {"id": 41, "name": "CHABAHIL", "latitude": 27.716944, "longitude": 85.347714},
+      {"id": 42, "name": "CHANDRAGADHI", "latitude": 26.56829833, "longitude": 88.06820167},
+      {"id": 43, "name": "CHANDRAPUR", "latitude": 27.118864, "longitude": 85.35939},
+      {"id": 44, "name": "CHANDRAUTA", "latitude": 27.649107, "longitude": 82.864922},
+      {"id": 45, "name": "CHAPAGAUN", "latitude": 27.596551, "longitude": 85.323113},
+      {"id": 46, "name": "CHARIKOT", "latitude": 27.6625706, "longitude": 86.0488691},
+      {"id": 47, "name": "CHHEPLUNG", "latitude": 27.7702339, "longitude": 86.7236035},
+      {"id": 48, "name": "CHINA TOWN", "latitude": 27.74525155, "longitude": 85.34565335},
+      {"id": 49, "name": "CHIPLEDHUNGA POKHARA", "latitude": 28.22450175, "longitude": 83.98847973},
+      {"id": 50, "name": "DADELDHURA", "latitude": 29.3047779, "longitude": 80.59231339},
+      {"id": 51, "name": "DAILEKH", "latitude": 28.84296833, "longitude": 81.70896333},
+      {"id": 52, "name": "DALDALE", "latitude": 27.67068, "longitude": 84.19667},
+      {"id": 53, "name": "DAMAK", "latitude": 26.66551042, "longitude": 87.70410967},
+      {"id": 54, "name": "DAMAK AMDA", "latitude": 26.64220406, "longitude": 87.66454327},
+      {"id": 55, "name": "DAMAULI", "latitude": 27.97634329, "longitude": 84.26786816},
+      {"id": 56, "name": "DEVGHAT", "latitude": 27.749282, "longitude": 84.433069},
+      {"id": 57, "name": "DEVTAL", "latitude": 26.94909917, "longitude": 85.02289583},
+      {"id": 58, "name": "DHADINGBESI", "latitude": 27.911468, "longitude": 84.890189},
+      {"id": 59, "name": "DHANESHWOR", "latitude": 27.751513, "longitude": 85.316644},
+      {"id": 60, "name": "DHANGADI", "latitude": 28.7045339, "longitude": 80.5667466},
+      {"id": 61, "name": "DHANKUTA", "latitude": 26.9702568, "longitude": 87.3436398},
+      {"id": 62, "name": "DHAPASI", "latitude": 27.749769, "longitude": 85.331892},
+      {"id": 63, "name": "DHARAN", "latitude": 26.81335296, "longitude": 87.28470225},
+      {"id": 64, "name": "DUDHAULI", "latitude": 26.963411, "longitude": 86.284786},
+      {"id": 65, "name": "DUHABI", "latitude": 26.570857, "longitude": 87.279094},
+      {"id": 66, "name": "DULEGAUDA", "latitude": 28.055575, "longitude": 84.072324},
+      {"id": 67, "name": "DUMKIBAS", "latitude": 27.44748955, "longitude": 83.89891207},
+      {"id": 68, "name": "DUMRE", "latitude": 27.963551, "longitude": 84.409503},
+      {"id": 69, "name": "GADHI", "latitude": 26.589873, "longitude": 87.215609},
+      {"id": 70, "name": "GAIDAKOT", "latitude": 27.4219, "longitude": 84.2417},
+      {"id": 71, "name": "GAIGHAT", "latitude": 26.791351, "longitude": 86.698299},
+      {"id": 72, "name": "GANESTHAN", "latitude": 27.743631, "longitude": 85.312},
+      {"id": 73, "name": "GARAUDA", "latitude": 26.950615, "longitude": 85.316688},
+      {"id": 74, "name": "GATTHAGHAR", "latitude": 27.67432286, "longitude": 85.37051786},
+      {"id": 75, "name": "GAURADAHA", "latitude": 26.564451, "longitude": 87.718341},
+      {"id": 76, "name": "GAUSHALA", "latitude": 26.917764, "longitude": 85.779544},
+      {"id": 77, "name": "GETA EYE", "latitude": 28.67002002, "longitude": 80.81075958},
+      {"id": 78, "name": "GHORAHI", "latitude": 28.039915, "longitude": 82.485695},
+      {"id": 79, "name": "GOKULGANGA", "latitude": 27.55611222, "longitude": 86.20805535},
+      {"id": 80, "name": "GOLBAJAR", "latitude": 26.792415, "longitude": 86.332135},
+      {"id": 81, "name": "GONGABU", "latitude": 27.73450056, "longitude": 85.31048415},
+      {"id": 82, "name": "GORKHA BAZAR", "latitude": 27.99494441, "longitude": 84.62536385},
+      {"id": 83, "name": "GORUSINGHE", "latitude": 27.660938, "longitude": 83.038559},
+      {"id": 84, "name": "GWARKO", "latitude": 27.66466512, "longitude": 85.32988585},
+      {"id": 85, "name": "HALCHOWK", "latitude": 27.71452691, "longitude": 85.28298744},
+      {"id": 86, "name": "HALLANCHOWK LAKESIDE", "latitude": 28.2158912, "longitude": 83.958506},
+      {"id": 87, "name": "HARIWAN", "latitude": 27.090208, "longitude": 85.550062},
+      {"id": 88, "name": "HATTIBAN", "latitude": 27.647343, "longitude": 85.336395},
+      {"id": 89, "name": "HATTIGAUDA", "latitude": 27.75705, "longitude": 85.34962},
+      {"id": 90, "name": "HATTISAR1", "latitude": 27.70996, "longitude": 85.32162833},
+      {"id": 91, "name": "HATTISHAR MOBILE", "latitude": 27.71097775, "longitude": 85.32184441},
+      {"id": 92, "name": "HATTISHAR2", "latitude": 27.71097775, "longitude": 85.32184441},
+      {"id": 93, "name": "HEMJA", "latitude": 28.27870567, "longitude": 83.93593686},
+      {"id": 94, "name": "HETAUDA", "latitude": 27.41856063, "longitude": 85.028539},
+      {"id": 95, "name": "HOTBREAD CHOWK", "latitude": 27.7149156, "longitude": 85.3102438},
+      {"id": 96, "name": "HOTEL ALOFT THAMEL", "latitude": 27.71579551, "longitude": 85.31320517},
+      {"id": 97, "name": "HOTEL GARUDA", "latitude": 27.7159237, "longitude": 85.3102633},
+      {"id": 98, "name": "ICHANGUNARAYAN", "latitude": 27.716647, "longitude": 85.291884},
+      {"id": 99, "name": "ILAM", "latitude": 26.910093, "longitude": 87.92762},
+      {"id": 100, "name": "IMADOLE", "latitude": 27.66144, "longitude": 85.343087},
+      {"id": 101, "name": "INARUWA", "latitude": 26.604436, "longitude": 87.142221},
+      {"id": 102, "name": "IOE PULCHWOK", "latitude": 27.6828417, "longitude": 85.3200053},
+      {"id": 103, "name": "ITAHARI", "latitude": 26.663531, "longitude": 87.275032},
+      {"id": 104, "name": "JANAKPUR", "latitude": 26.73479708, "longitude": 85.93225619},
+      {"id": 105, "name": "JAWALAKHEL", "latitude": 27.67483509, "longitude": 85.31452456},
+      {"id": 106, "name": "JITPUR", "latitude": 27.687286, "longitude": 83.179231},
+      {"id": 107, "name": "JORPATI", "latitude": 27.7219, "longitude": 85.3757},
+      {"id": 108, "name": "JUMLA", "latitude": 29.275543, "longitude": 82.182995},
+      {"id": 109, "name": "JUMRI", "latitude": 28.099562, "longitude": 82.849393},
+      {"id": 110, "name": "KADAGHARI", "latitude": 27.693506, "longitude": 85.369713},
+      {"id": 111, "name": "KAKARVITTA", "latitude": 26.38527, "longitude": 88.0918},
+      {"id": 112, "name": "KALAIYA", "latitude": 27.032968, "longitude": 85.00462},
+      {"id": 113, "name": "KALANKI", "latitude": 27.6946192, "longitude": 85.280499},
+      {"id": 114, "name": "KALIMATI", "latitude": 27.698591, "longitude": 85.3004578},
+      {"id": 115, "name": "KALOPUL", "latitude": 27.712178, "longitude": 85.335651},
+      {"id": 116, "name": "KALYANPUR", "latitude": 26.641424, "longitude": 86.624836},
+      {"id": 117, "name": "KAMALBINAYAK", "latitude": 27.9818832, "longitude": 84.36795},
+      {"id": 118, "name": "KANCHANBARI", "latitude": 26.486816, "longitude": 87.277492},
+      {"id": 119, "name": "KANTIPATH", "latitude": 27.7101498, "longitude": 85.31480447},
+      {"id": 120, "name": "KAPAN", "latitude": 27.731, "longitude": 85.3565},
+      {"id": 121, "name": "KATARI", "latitude": 26.9629423, "longitude": 86.3702141},
+      {"id": 122, "name": "KAWASOTI", "latitude": 27.6444456, "longitude": 84.127325},
+      {"id": 123, "name": "KHAIRENI", "latitude": 27.643629, "longitude": 83.59364},
+      {"id": 124, "name": "KHAJURA", "latitude": 28.125353, "longitude": 81.57655},
+      {"id": 125, "name": "KHANDBARI", "latitude": 27.37743411, "longitude": 87.2084321},
+      {"id": 126, "name": "KHUMJUNG", "latitude": 27.821393, "longitude": 86.6802868},
+      {"id": 127, "name": "KIRTIPUR", "latitude": 27.404339, "longitude": 85.1639},
+      {"id": 128, "name": "KOHALPUR", "latitude": 28.1943372, "longitude": 81.6881553},
+      {"id": 129, "name": "KOTIHAWA", "latitude": 27.572435, "longitude": 83.469122},
+      {"id": 130, "name": "KRISHNANAGAR", "latitude": 27.50206457, "longitude": 82.79304266},
+      {"id": 131, "name": "KSHIRESHWAR", "latitude": 26.86416333, "longitude": 85.96302333},
+      {"id": 132, "name": "KULESHWOR", "latitude": 27.688386, "longitude": 85.298584},
+      {"id": 133, "name": "KUMARIPATI", "latitude": 27.67058731, "longitude": 85.32018044},
+      {"id": 134, "name": "KWALAKHU", "latitude": 27.6747377, "longitude": 85.32484748},
+      {"id": 135, "name": "LAHAN", "latitude": 26.711515, "longitude": 86.481755},
+      {"id": 136, "name": "LAKESIDE", "latitude": 28.20956724, "longitude": 83.95652415},
+      {"id": 137, "name": "LALBANDI", "latitude": 27.05234, "longitude": 85.635302},
+      {"id": 138, "name": "LAMAHI", "latitude": 27.8736647, "longitude": 82.5196158},
+      {"id": 139, "name": "LAMKI", "latitude": 28.62866, "longitude": 81.15089},
+      {"id": 140, "name": "LAZIMPAT", "latitude": 27.722114, "longitude": 85.321354},
+      {"id": 141, "name": "LEKHNATH", "latitude": 28.1630063, "longitude": 84.0577111},
+      {"id": 142, "name": "LUBHU", "latitude": 27.65634772, "longitude": 85.30963167},
+      {"id": 143, "name": "LUKLA", "latitude": 27.689526, "longitude": 86.729474},
+      {"id": 144, "name": "LUMBINI", "latitude": 27.474089, "longitude": 83.276345},
+      {"id": 145, "name": "MADAN B HOSPITAL", "latitude": 26.66312633, "longitude": 87.59953154},
+      {"id": 146, "name": "MADYAPURTHIMI", "latitude": 27.675767, "longitude": 85.397997},
+      {"id": 147, "name": "MAHARAJGUNJ", "latitude": 27.77413738, "longitude": 85.35992146},
+      {"id": 148, "name": "MAHENDRANAGAR", "latitude": 28.96680472, "longitude": 80.18154994},
+      {"id": 149, "name": "MANGALPUR", "latitude": 27.503998, "longitude": 83.468858},
+      {"id": 150, "name": "MANIGRAM", "latitude": 27.503998, "longitude": 83.468858},
+      {"id": 151, "name": "MARCHAWARI", "latitude": 27.37590708, "longitude": 83.35132893},
+      {"id": 152, "name": "MECHI HOSPITAL", "latitude": 26.5570737, "longitude": 88.0882894},
+      {"id": 153, "name": "MIRCHAIYA", "latitude": 26.829806, "longitude": 86.253796},
+      {"id": 154, "name": "MULPANI", "latitude": 27.706644, "longitude": 85.394677},
+      {"id": 155, "name": "MURLICHOWK", "latitude": 27.02511, "longitude": 84.885546},
+      {"id": 156, "name": "MUSIKOT", "latitude": 28.627934, "longitude": 82.458228},
+      {"id": 157, "name": "NAMCHHE1", "latitude": 27.80472959, "longitude": 86.70966446},
+      {"id": 158, "name": "NAMCHHE2", "latitude": 28.06947802, "longitude": 86.58626316},
+      {"id": 159, "name": "NARADEVI", "latitude": 27.707972, "longitude": 85.306156},
+      {"id": 160, "name": "NARAYANGARH", "latitude": 27.69355046, "longitude": 84.42329074},
+      {"id": 161, "name": "NARAYANI COUNTER", "latitude": 27.6836185, "longitude": 84.4342193},
+      {"id": 162, "name": "NAREPHANT", "latitude": 27.674084, "longitude": 85.351679},
+      {"id": 163, "name": "NARSINGCHWOK", "latitude": 27.7141546, "longitude": 85.31151175},
+      {"id": 164, "name": "NATHAM COLLEGE", "latitude": 27.69384069, "longitude": 85.29470423},
+      {"id": 165, "name": "Naxal", "latitude": 27.7167343, "longitude": 85.3272969},
+      {"id": 166, "name": "NAYABAZAR", "latitude": 27.7169, "longitude": 85.3047},
+      {"id": 167, "name": "NEPALGUNJ", "latitude": 28.06964071, "longitude": 81.62915747},
+      {"id": 168, "name": "NEPALGUNJ AIRPORT", "latitude": 28.1006049, "longitude": 81.6671346},
+      {"id": 169, "name": "NEPALTAR", "latitude": 27.7423645, "longitude": 85.3036535},
+      {"id": 170, "name": "NEWROAD", "latitude": 27.70562, "longitude": 85.30963167},
+      {"id": 171, "name": "NEWROAD GATE", "latitude": 27.70313061, "longitude": 85.31279056},
+      {"id": 172, "name": "NEWROAD NEPALGUNJ", "latitude": 28.061413, "longitude": 81.625877},
+      {"id": 173, "name": "NORTH LAKESIDE", "latitude": 28.22026427, "longitude": 83.95758761},
+      {"id": 174, "name": "OLD BANESHWOR", "latitude": 27.70123847, "longitude": 85.34034756},
+      {"id": 175, "name": "PADAMPUR", "latitude": 27.684243, "longitude": 84.5059361},
+      {"id": 176, "name": "PALPA", "latitude": 27.8646, "longitude": 83.5464},
+      {"id": 177, "name": "PAMEE_POKHARA", "latitude": 28.28020593, "longitude": 83.98176114},
+      {"id": 178, "name": "PARADISO POKHARA", "latitude": 28.21156, "longitude": 83.957401},
+      {"id": 179, "name": "PARASI", "latitude": 27.53080348, "longitude": 83.66734812},
+      {"id": 180, "name": "PARSA", "latitude": 27.612696, "longitude": 84.568228},
+      {"id": 181, "name": "PARSYANG", "latitude": 28.22514798, "longitude": 83.98022091},
+      {"id": 182, "name": "PARWANIPUR", "latitude": 27.07123453, "longitude": 84.95460335},
+      {"id": 183, "name": "PATAN", "latitude": 27.66466512, "longitude": 85.32988585},
+      {"id": 184, "name": "PATHARI", "latitude": 26.660646, "longitude": 87.559617},
+      {"id": 185, "name": "PHARPING", "latitude": 27.612559, "longitude": 85.26362},
+      {"id": 186, "name": "PHIKKAL", "latitude": 26.895363, "longitude": 88.067963},
+      {"id": 187, "name": "POKHARA", "latitude": 28.2109086, "longitude": 83.98447833},
+      {"id": 188, "name": "PUTALISADAK", "latitude": 27.703818, "longitude": 85.322174},
+      {"id": 189, "name": "RAJBIRAJ", "latitude": 26.539743, "longitude": 86.746339},
+      {"id": 190, "name": "RAJMARGA CHOWK", "latitude": 26.659535, "longitude": 87.69761},
+      {"id": 191, "name": "RAMANANDA CHOWK", "latitude": 26.735459, "longitude": 85.918296},
+      {"id": 192, "name": "RAMGOPALPUR", "latitude": 26.820173, "longitude": 85.796398},
+      {"id": 193, "name": "RAMKOT", "latitude": 27.723697, "longitude": 85.25398},
+      {"id": 194, "name": "ROAD HOUSE CAFÉ 2", "latitude": 28.2053021, "longitude": 83.9616364},
+      {"id": 195, "name": "ROADHOUSE CAFE THAMEL", "latitude": 27.71436241, "longitude": 85.31040847},
+      {"id": 196, "name": "SARASWATINAGAR", "latitude": 27.72263742, "longitude": 85.3494449},
+      {"id": 197, "name": "SATDOBATO", "latitude": 27.65677532, "longitude": 85.32198486},
+      {"id": 198, "name": "SAU PHARSATIKAR", "latitude": 27.62933, "longitude": 83.404056},
+      {"id": 199, "name": "SAURAHA", "latitude": 27.64689326, "longitude": 84.35911393},
+      {"id": 200, "name": "SHANKHAMUL", "latitude": 27.68468897, "longitude": 85.33386349},
+      {"id": 201, "name": "SIMARA", "latitude": 27.16523868, "longitude": 84.97543481},
+      {"id": 202, "name": "Sinamangal", "latitude": 27.69581777, "longitude": 85.35341504},
+      {"id": 203, "name": "SINDHULI", "latitude": 27.20844432, "longitude": 85.91157233},
+      {"id": 204, "name": "Sitapaila", "latitude": 27.70614081, "longitude": 85.28327766},
+      {"id": 205, "name": "SUNDHARA", "latitude": 27.668789, "longitude": 85.330057},
+      {"id": 206, "name": "SURKHET", "latitude": 28.593155, "longitude": 81.613544},
+      {"id": 207, "name": "SURUNGA", "latitude": 26.646129, "longitude": 87.891978},
+      {"id": 208, "name": "SURYABINAYAK", "latitude": 27.6676377, "longitude": 85.4244342},
+      {"id": 209, "name": "SUVEKCHYA HOSPITAL", "latitude": 27.70965747, "longitude": 85.28056209},
+      {"id": 210, "name": "TANDI", "latitude": 27.62379342, "longitude": 84.51054099},
+      {"id": 211, "name": "TAPLEJUNG", "latitude": 27.353975, "longitude": 87.666237},
+      {"id": 212, "name": "TAULIHAWA", "latitude": 27.55178999, "longitude": 83.04686416},
+      {"id": 213, "name": "THAMEL", "latitude": 27.7119569, "longitude": 85.3085044},
+      {"id": 214, "name": "THANKOT", "latitude": 27.68639822, "longitude": 85.20404025},
+      {"id": 215, "name": "TIKAPUR", "latitude": 28.53299949, "longitude": 81.11813441},
+      {"id": 216, "name": "TINCHULI", "latitude": 27.7270236, "longitude": 85.3691953},
+      {"id": 217, "name": "TINKUNE", "latitude": 27.68601726, "longitude": 85.344576},
+      {"id": 218, "name": "TRAFFIC CHOWK", "latitude": 26.454798, "longitude": 87.275094},
+      {"id": 219, "name": "TRIPURESHWOR", "latitude": 27.69489451, "longitude": 85.31046713},
+      {"id": 220, "name": "TULSIPUR", "latitude": 28.13102439, "longitude": 82.29701855},
+      {"id": 221, "name": "URLABARI", "latitude": 26.663101, "longitude": 87.638068},
+      {"id": 222, "name": "WALING", "latitude": 27.984052, "longitude": 83.760524},
+      {"id": 223, "name": "WESTERN HOSPITAL", "latitude": 28.047537, "longitude": 81.6155444},
+      {"id": 224, "name": "YASODHARA", "latitude": 27.460814, "longitude": 82.995578},
+      {"id": 225, "name": "YOGIKUTI", "latitude": 27.665869, "longitude": 83.464837}
+    ]
+  }

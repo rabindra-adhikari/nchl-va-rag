@@ -21,3 +21,27 @@ nlu:
       - What is the transaction limit?
       - How do I make a bill payment?
       - Tell me about fund transfers
+      - Features of mobile banking         # Added
+      - Mobile banking features            # Added
+      - What can I do with mobile banking? # Added
+      - Tell me about mobile banking       # Added
+      - How does mobile banking work?      # Added
+      - Benefits of mobile banking         # Added
+
+  - intent: find_nearest_atm
+    examples: |
+      - Where’s the nearest ATM?
+      - Find an ATM near me
+      - Closest ATM location
+      - Show me nearby ATMs
+      - ATM near my location               # Added for clarity
+      - Where can I find an ATM?           # Added for clarity
+
+  - intent: find_nearest_branch
+    examples: |
+      - Where’s the nearest branch?
+      - Find a bank branch near me
+      - Closest bank location
+      - Show me nearby branches
+      - Branch near my location            # Added for clarity
+      - Where is the closest branch?       # Added for clarity

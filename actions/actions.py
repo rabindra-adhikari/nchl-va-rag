@@ -1,16 +1,16 @@
 import json
-import numpy as np
-import faiss
+import os
 import logging
-from sentence_transformers import SentenceTransformer, CrossEncoder
+from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from typing import Any, Text, Dict, List
+from sentence_transformers import SentenceTransformer, CrossEncoder
 from transformers import AutoTokenizer, AutoModelForCausalLM
-import os
+import numpy as np
+import faiss
 from dotenv import load_dotenv
 
-# Set up logging
+# ----- Logging Setup -----
 logger = logging.getLogger(__name__)
 
 # ----- Bank-Specific Knowledge Base Setup -----
@@ -45,6 +45,17 @@ except Exception as e:
     logger.error(f"Error loading general FAISS index: {e}")
     general_index = None
 
+# ----- Location Data Setup (from locator system) -----
+json_path = os.path.join(os.path.dirname(__file__), '../data/knowledge_base/locations.json')
+try:
+    with open(json_path, 'r') as f:
+        location_data = json.load(f)
+    branches = location_data.get('branches', [])
+    atms = location_data.get('atms', [])
+except Exception as e:
+    logger.error(f"Error loading location data: {e}")
+    branches, atms = [], []
+
 # ----- Models Initialization -----
 load_dotenv()
 token = os.environ.get("HF_TOKEN")
@@ -52,42 +63,43 @@ if not token:
     logger.error("HF_TOKEN not found in environment variables. Please set it.")
 
 try:
-    retrieval_model = SentenceTransformer("sentence-transformers/all-mpnet-base-v2")
+    retrieval_model = SentenceTransformer("./fine_tuned_model")
     cross_encoder = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
-    #retrieval_model = SentenceTransformer("BAAI/bge-small-en-v1.5")
-    #cross_encoder = CrossEncoder("BAAI/bge-reranker-base")
 except Exception as e:
     logger.error(f"Error loading retrieval or cross-encoder model: {e}")
 
 try:
-    tokenizer_llama = AutoTokenizer.from_pretrained("meta-llama/Llama-3.2-1B-Instruct", token=token)
-    model_llama = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-3.2-1B-Instruct", token=token)
+    tokenizer_llama = AutoTokenizer.from_pretrained("meta-llama/Llama-3.2-1B-Instruct", use_auth_token=token)
+    model_llama = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-3.2-1B-Instruct", use_auth_token=token)
 except Exception as e:
-    logger.error(f"Error loading Llama‑3.2-1B model: {e}")
+    logger.error(f"Error loading Llama‑3.2‑1B model: {e}")
     tokenizer_llama, model_llama = None, None
 
-# ----- Helper: Parameterized Retrieval Function -----
-def retrieve_faq_custom(query: str, kb_data: List[Dict[Text, Any]], kb_index, k: int = 3, ce_threshold: float = 0.0) -> List[Dict[Text, Any]]:
-    """
-    Retrieve FAQ entries from a given knowledge base using dense retrieval and cross-encoder re-ranking.
-    """
+# ----- Helper Function: FAQ Retrieval with Deduplication -----
+def retrieve_faq_custom(query: str, kb_data: List[Dict[Text, Any]], kb_index,
+                        initial_k: int = 15, final_k: int = 3, ce_threshold: float = 0.0) -> List[Dict[Text, Any]]:
     if kb_index is None:
         logger.error("FAISS index is not loaded for the given knowledge base.")
         return None
 
     try:
         query_embedding = retrieval_model.encode([query], convert_to_numpy=True)
-        distances, indices = kb_index.search(query_embedding, k)
+        faiss.normalize_L2(query_embedding)
+        distances, indices = kb_index.search(query_embedding, initial_k)
     except Exception as e:
         logger.error(f"Error during FAISS search: {e}")
         return None
 
     candidate_pairs = []
-    candidate_indices = []
-    for idx in indices[0]:
-        candidate_question = kb_data[idx]['question']
-        candidate_pairs.append((query, candidate_question))
-        candidate_indices.append(idx)
+    candidate_results = []
+    for i, idx in enumerate(indices[0]):
+        if idx < 0 or idx >= len(kb_data):
+            continue
+        faq_entry = kb_data[idx].copy()
+        combined_text = f"{faq_entry.get('question', '')} {faq_entry.get('answer', '')}"
+        candidate_pairs.append((query, combined_text))
+        faq_entry["retrieval_distance"] = float(distances[0][i])
+        candidate_results.append(faq_entry)
 
     try:
         ce_scores = cross_encoder.predict(candidate_pairs)
@@ -95,36 +107,48 @@ def retrieve_faq_custom(query: str, kb_data: List[Dict[Text, Any]], kb_index, k:
         logger.error(f"Error during cross-encoder prediction: {e}")
         return None
 
-    results = []
-    for distance, idx, ce_score in zip(distances[0], candidate_indices, ce_scores):
-        faq_entry = kb_data[idx].copy()
-        faq_entry["retrieval_distance"] = float(distance)
-        faq_entry["ce_score"] = ce_score
-        results.append(faq_entry)
+    for i, score in enumerate(ce_scores):
+        candidate_results[i]["ce_score"] = score
 
-    results = sorted(results, key=lambda x: x["ce_score"], reverse=True)
+    distinct_results = {}
+    for entry in candidate_results:
+        answer = entry.get("answer", "").strip()
+        if answer in distinct_results:
+            if entry["ce_score"] > distinct_results[answer]["ce_score"]:
+                distinct_results[answer] = entry
+        else:
+            distinct_results[answer] = entry
+
+    sorted_results = sorted(distinct_results.values(), key=lambda x: x["ce_score"], reverse=True)
     if ce_threshold is not None:
-        results = [res for res in results if res["ce_score"] >= ce_threshold]
+        sorted_results = [res for res in sorted_results if res["ce_score"] >= ce_threshold]
 
-    return results if results else None
+    return sorted_results[:final_k] if sorted_results else None
 
-# ----- Llama‑2 Final Answer Generation -----
+# ----- Llama‑3.2 Final Answer Generation -----
 def generate_final_answer_llama2(query: str, retrieved_faqs: List[Dict[Text, Any]]) -> str:
     if not retrieved_faqs:
-        return ("I am the virtual assistant for this bank. "
-                "I can help you with queries related to our banking services. "
-                "Please ask me something specific about this bank, or contact your branch for further assistance.")
+        return (
+            "I am the virtual assistant for this bank. "
+            "I can help you with queries related to our banking services. "
+            "Please ask me something specific about this bank, or contact your branch for further assistance."
+        )
     else:
-        context = "\n".join([faq['answer'] for faq in retrieved_faqs])
-        prompt = (
-            "System: You are a knowledgeable assistant that synthesizes relevant information from a specialized knowledge base to answer mobile banking queries.\n"
-            "User: " + query + "\n"
-            "System: Here is the relevant information extracted from our knowledge base:\n" + context + "\n"
+        template = (
+            "System: {instructions}\n"
+            "Context: {context}\n"
+            "User: {query}\n"
             "Assistant: Final Answer: "
+        )
+        prompt = template.format(
+            instructions="You are an expert mobile banking assistant synthesizing info from our FAQ. "
+                         "You are receiving potential answers for the given user query; please analyze the context and provide the best, most accurate result.",
+            context="\n".join([faq.get('answer', '') for faq in retrieved_faqs]),
+            query=query
         )
 
         if not tokenizer_llama or not model_llama:
-            logger.error("Llama‑3.2-1B model or tokenizer is not loaded.")
+            logger.error("Llama‑3.2‑1B model or tokenizer is not loaded.")
             return "There was an error generating the final answer. Please try again later."
 
         try:
@@ -140,11 +164,22 @@ def generate_final_answer_llama2(query: str, retrieved_faqs: List[Dict[Text, Any
             generated_tokens = outputs[0][input_ids.shape[1]:]
             final_answer = tokenizer_llama.decode(generated_tokens, skip_special_tokens=True)
         except Exception as e:
-            logger.error(f"Error during Llama‑3.1-8B generation: {e}")
+            logger.error(f"Error during Llama‑3.2‑1B generation: {e}")
             final_answer = "There was an error generating the final answer. Please try again later."
         return final_answer
 
-# ----- Custom Action for Rasa -----
+# ----- Haversine Distance Calculation (from locator system) -----
+def haversine(lat1, lon1, lat2, lon2):
+    R = 6371  # Earth's radius in km
+    dLat = (lat2 - lat1) * 3.14159 / 180
+    dLon = (lon2 - lon1) * 3.14159 / 180
+    a = (dLat / 2) * (dLat / 2) + \
+        (lat1 * 3.14159 / 180) * (lat2 * 3.14159 / 180) * \
+        (dLon / 2) * (dLon / 2)
+    c = 2 * ((a ** 0.5) * ((1 - a) ** 0.5))
+    return R * c
+
+# ----- Custom Action for Mobile Banking -----
 class ActionMobileBankingResponse(Action):
     def name(self) -> Text:
         return "action_mobile_banking_response"
@@ -160,21 +195,20 @@ class ActionMobileBankingResponse(Action):
             
             logger.info(f"Received user query: {user_query}")
 
-            # 1. Try bank-specific knowledge base retrieval
-            retrieved_bank_faqs = retrieve_faq_custom(user_query, bank_faq_data, bank_index, k=3, ce_threshold=0.0)
+            retrieved_bank_faqs = retrieve_faq_custom(user_query, bank_faq_data, bank_index,
+                                                      initial_k=15, final_k=3, ce_threshold=0.0)
             if retrieved_bank_faqs:
                 final_answer = generate_final_answer_llama2(user_query, retrieved_bank_faqs)
                 dispatcher.utter_message(text=final_answer)
                 return []
             
-            # 2. If not found, try general knowledge base retrieval
-            retrieved_general_faqs = retrieve_faq_custom(user_query, general_faq_data, general_index, k=3, ce_threshold=0.0)
+            retrieved_general_faqs = retrieve_faq_custom(user_query, general_faq_data, general_index,
+                                                         initial_k=15, final_k=3, ce_threshold=0.0)
             if retrieved_general_faqs:
                 final_answer = generate_final_answer_llama2(user_query, retrieved_general_faqs)
                 dispatcher.utter_message(text=final_answer)
                 return []
             
-            # 3. Fallback response using a dynamic message with bank name
             bank_name = os.environ.get("BANK_NAME", "this bank")
             fallback_message = (
                 f"I'm sorry, I cannot provide information regarding your question. "
@@ -185,4 +219,67 @@ class ActionMobileBankingResponse(Action):
         except Exception as e:
             logger.error(f"Error in ActionMobileBankingResponse: {e}")
             dispatcher.utter_message(text="An error occurred while processing your request.")
+        return []
+
+# ----- Custom Action for Nearest Location with Map -----
+# ----- Custom Action for Nearest Location with Map -----
+class ActionFindNearestLocation(Action):
+    def name(self) -> Text:
+        return "action_find_nearest_location"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        intent = tracker.latest_message.get("intent", {}).get("name")
+        user_message = tracker.latest_message.get("text", "").lower()
+        
+        # Safeguard: Check for location-related keywords
+        location_keywords = ["near", "nearest", "where", "location", "find", "show", "close", "closest", "atm", "branch"]
+        if not any(keyword in user_message for keyword in location_keywords):
+            dispatcher.utter_message(text="It seems like you're not asking for a location. Could you clarify your request?")
+            return []
+
+        # Get user location from metadata (default to Kathmandu if none)
+        metadata = tracker.latest_message.get("metadata", {})
+        user_location = metadata.get("location", {"lat": 27.7172, "lon": 85.3240})
+        user_lat, user_lon = user_location["lat"], user_location["lon"]
+
+        # Determine if user wants ATMs or branches
+        if "atm" in intent or "atm" in user_message:
+            data = atms
+            location_type = "ATMs"
+        else:
+            data = branches
+            location_type = "Branches"
+
+        if not data:
+            dispatcher.utter_message(text=f"Sorry, I don’t have data for {location_type} at the moment.")
+            return []
+
+        # Calculate distances and sort
+        for item in data:
+            item["distance"] = haversine(user_lat, user_lon, item["latitude"], item["longitude"])
+        data.sort(key=lambda x: x["distance"])
+
+        # Prepare all location data
+        locations = [
+            {
+                "name": item["name"],
+                "latitude": item["latitude"],
+                "longitude": item["longitude"],
+                "distance": item["distance"]
+            } for item in data
+        ]
+
+        # Custom payload to trigger map rendering
+        payload = {
+            "text": f"Here are the nearest {location_type} to your current location. Please select a location option below to proceed with finding the closest one for you:",
+            "custom": {
+                "type": "location_map",
+                "user_location": {"lat": user_lat, "lon": user_lon},
+                "locations": locations,
+                "location_type": location_type.lower()
+            }
+        }
+        dispatcher.utter_message(**payload)
         return []

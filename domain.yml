@@ -4,6 +4,8 @@ intents:
   - greet
   - goodbye
   - query_mobile_banking
+  - find_nearest_atm
+  - find_nearest_branch
 
 entities:
   - mobile_query
@@ -21,6 +23,9 @@ responses:
     - text: "Goodbye! Have a great day!"
   utter_default:
     - text: "I'm sorry, I didn't understand that. Could you please rephrase?"
+  utter_ask_location:
+    - text: "To find the nearest ATMs or branches, I need your location. Please allow location access in your browser, or type a specific location (e.g., 'Kathmandu')."
 
 actions:
   - action_mobile_banking_response
+  - action_find_nearest_location

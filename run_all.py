@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import subprocess
-import os
 import time
 import sys
 import signal
@@ -20,7 +19,6 @@ class Colors:
 def print_colored(text, color):
     print(f"{color}{text}{Colors.ENDC}")
 
-# Function to run a command in a new process
 def run_command(command, name, color):
     print_colored(f"Starting {name}...", color)
     try:
@@ -46,7 +44,6 @@ def run_command(command, name, color):
 # Store processes for proper cleanup
 processes = []
 
-# Handle graceful shutdown
 def signal_handler(sig, frame):
     print_colored("\nShutting down all services...", Colors.YELLOW)
     for process in processes:
@@ -65,12 +62,12 @@ def main():
         print_colored("Rasa is not installed or not in PATH. Please install Rasa first.", Colors.RED)
         sys.exit(1)
     
-    # Check if Streamlit is installed
+    # Check if Flask is installed
     try:
-        subprocess.run(["streamlit", "--version"], check=True, stdout=subprocess.PIPE)
+        subprocess.run(["flask", "--version"], check=True, stdout=subprocess.PIPE)
     except (subprocess.SubprocessError, FileNotFoundError):
-        print_colored("Streamlit is not installed. Installing it now...", Colors.YELLOW)
-        subprocess.run([sys.executable, "-m", "pip", "install", "streamlit"])
+        print_colored("Flask is not installed. Installing it now...", Colors.YELLOW)
+        subprocess.run([sys.executable, "-m", "pip", "install", "flask"])
     
     # Start Rasa action server
     action_server = threading.Thread(
@@ -94,18 +91,17 @@ def main():
     # Give Rasa server time to start
     time.sleep(5)
     
-    # Start Streamlit app
-    print_colored("Starting Streamlit frontend...", Colors.YELLOW)
-    streamlit_url = "http://localhost:8501"
-    print_colored(f"Streamlit will be available at: {streamlit_url}", Colors.YELLOW)
+    # Start Flask app
+    flask_url = "http://localhost:8501"
+    print_colored("Starting Flask frontend...", Colors.YELLOW)
+    print_colored(f"Flask app will be available at: {flask_url}", Colors.YELLOW)
     
-    # Open browser automatically
-    webbrowser.open(streamlit_url)
+    # Open browser automatically after a short delay
+    threading.Timer(2, lambda: webbrowser.open(flask_url)).start()
     
-    # Run Streamlit in the main thread
-    # Run Streamlit in the main thread
-    streamlit_process = run_command("streamlit run app.py --server.headless true", "Streamlit", Colors.YELLOW)
-    processes.append(streamlit_process)
+    # Run the Flask app (runs app.py)
+    flask_process = run_command("python app.py", "Flask", Colors.YELLOW)
+    processes.append(flask_process)
     
     # Keep the script running
     try:
@@ -119,4 +115,3 @@ if __name__ == "__main__":
     print_colored("  Starting Banking Virtual Assistant", Colors.BOLD)
     print_colored("=" * 50, Colors.BOLD)
     main()
-
