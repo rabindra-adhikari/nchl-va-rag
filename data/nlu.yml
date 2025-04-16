@@ -45,3 +45,18 @@ nlu:
       - Show me nearby branches
       - Branch near my location            # Added for clarity
       - Where is the closest branch?       # Added for clarity
+
+  - intent: calculate_emi
+    examples: |
+      - calculate emi
+      - I want to calculate EMI
+      - EMI calculation
+      - compute my EMI
+      - please calculate emi
+
+  - intent: ask_interest_rates
+    examples: |
+      - what are the interest rates
+      - show me interest rates
+      - tell me about loan interest rates
+      - interest rates for loans

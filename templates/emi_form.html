@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMI Calculator Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f0f2f5;
+      padding: 20px;
+    }
+
+    .form-container {
+      max-width: 900px;
+      margin: 0px auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .form-header {
+      background-color: #e6a913;
+      color: white;
+      padding: 16px 20px;
+      font-weight: bold;
+      font-size: 1.3rem;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Grid container to align main inputs and slider */
+    #inputsGrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto;
+      grid-template-areas:
+        "loanType loanAmount loanTenure"
+        ".         loanSlider   .";
+      gap: 20px;
+      margin-bottom: 20px;
+      align-items: end;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Assign grid areas */
+    #group-loanType {
+      grid-area: loanType;
+    }
+
+    #group-loanAmount {
+      grid-area: loanAmount;
+    }
+
+    #group-loanTenure {
+      grid-area: loanTenure;
+    }
+
+    #group-loanSlider {
+      grid-area: loanSlider;
+    }
+
+    .form-group label {
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: #555;
+    }
+
+    .form-group select,
+    .form-group input[type="number"] {
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    /* Slider styling remains largely the same */
+    #group-loanSlider input[type="range"] {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+
+    .amount-display {
+      text-align: center;
+      font-weight: bold;
+      color: #e6a913;
+    }
+
+    .tenure-inputs {
+      display: flex;
+      gap: 10px;
+    }
+
+    .tenure-inputs input {
+      flex: 1;
+    }
+
+    .tenure-inputs select {
+      width: 120px;
+    }
+
+    /* Full-width row for submit button */
+    .form-row-submit {
+      margin-top: 20px;
+    }
+
+    .submit-btn {
+      background-color: #e6a913;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 12px 20px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s;
+    }
+
+    .submit-btn:hover {
+      background-color: #d19d10;
+    }
+
+    .submit-btn:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+
+    #form-response {
+      display: none;
+      margin-top: 15px;
+      padding: 12px;
+      border-radius: 6px;
+      background-color: #f0f7ff;
+      border-left: 4px solid #e6a913;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <div class="form-header">EMI Calculator Form</div>
+    <form id="emiCalculatorForm">
+      <!-- Main inputs grid -->
+      <div id="inputsGrid">
+        <!-- Loan Type Field -->
+        <div class="form-group" id="group-loanType">
+          <label for="loan_type">Loan Type</label>
+          <select id="loan_type" name="loan_type" required>
+            <option value="">Select Loan Type</option>
+            {% for loan_type in loan_types %}
+            <option value="{{ loan_type }}">{{ loan_type }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <!-- Loan Amount Field (Number Input Only) -->
+        <div class="form-group" id="group-loanAmount">
+          <label for="amount">Loan Amount (NPR)</label>
+          <input type="number" id="amount" name="amount" min="10000" max="100000000" step="10000" value="500000" required>
+        </div>
+
+        <!-- Loan Tenure Field -->
+        <div class="form-group" id="group-loanTenure">
+          <label for="tenure">Loan Tenure</label>
+          <div class="tenure-inputs">
+            <input type="number" id="tenure_value" name="tenure_value" min="1" max="30" value="5" required>
+            <select id="tenure_unit" name="tenure_unit">
+              <option value="years">Years</option>
+              <option value="months">Months</option>
+            </select>
+          </div>
+          <input type="hidden" id="tenure" name="tenure" value="5 years">
+        </div>
+
+        <!-- Loan Amount Slider (Placed in row 2, centered under loan amount) -->
+        <div class="form-group" id="group-loanSlider">
+          <input type="range" id="amount_slider" min="10000" max="100000000" step="10000" value="500000">
+          <div class="amount-display">NPR 500,000</div>
+        </div>
+      </div>
+      <!-- Submit Button Row -->
+      <div class="form-row-submit">
+        <button type="submit" class="submit-btn" id="submit-btn">Calculate EMI</button>
+      </div>
+      <div id="form-response"></div>
+    </form>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const amountSlider = document.getElementById('amount_slider');
+      const amountInput = document.getElementById('amount');
+      const amountDisplay = document.querySelector('.amount-display');
+
+      // Initialize display
+      amountDisplay.textContent = `NPR ${parseInt(amountInput.value).toLocaleString()}`;
+
+      // Update amount on slider change
+      amountSlider.addEventListener('input', function() {
+        amountInput.value = this.value;
+        amountDisplay.textContent = `NPR ${parseInt(this.value).toLocaleString()}`;
+      });
+
+      // Update slider on direct input
+      amountInput.addEventListener('input', function() {
+        amountSlider.value = this.value;
+        amountDisplay.textContent = `NPR ${parseInt(this.value).toLocaleString()}`;
+      });
+
+      // Combine tenure value and unit
+      const tenureValue = document.getElementById('tenure_value');
+      const tenureUnit = document.getElementById('tenure_unit');
+      const tenureHidden = document.getElementById('tenure');
+
+      function updateTenure() {
+        tenureHidden.value = `${tenureValue.value} ${tenureUnit.value}`;
+      }
+
+      tenureValue.addEventListener('input', updateTenure);
+      tenureUnit.addEventListener('change', updateTenure);
+
+      // Form submission via AJAX with debouncing
+      const form = document.getElementById('emiCalculatorForm');
+      const submitBtn = document.getElementById('submit-btn');
+      let isSubmitting = false;
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent normal form submission
+
+        if (isSubmitting) {
+          console.log('Submission already in progress, ignoring');
+          return;
+        }
+
+        isSubmitting = true;
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Calculating...';
+        console.log('Form submission started');
+
+        // Update hidden tenure field before submission
+        updateTenure();
+
+        // Get form data
+        const formData = new FormData(form);
+        console.log('Form data:', Object.fromEntries(formData));
+
+        // Send data via fetch API
+        fetch('/submit_emi', {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => {
+          console.log('Response received from /submit_emi');
+          return response.json();
+        })
+        .then(data => {
+          console.log('EMI calculation response:', data);
+          // Send result back to parent window
+          window.parent.postMessage({
+            type: 'emi_result',
+            data: data
+          }, '*');
+        })
+        .catch(error => {
+          console.error('Error during form submission:', error);
+          // Send error message to parent
+          window.parent.postMessage({
+            type: 'emi_error',
+            message: 'Error calculating EMI. Please try again.'
+          }, '*');
+        })
+        .finally(() => {
+          isSubmitting = false;
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Calculate EMI';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

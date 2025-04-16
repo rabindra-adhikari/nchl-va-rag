@@ -1,0 +1,9 @@
+{
+  "0": "ask_interest_rates",
+  "1": "calculate_emi",
+  "2": "find_nearest_atm",
+  "3": "find_nearest_branch",
+  "4": "goodbye",
+  "5": "greet",
+  "6": "query_mobile_banking"
+}

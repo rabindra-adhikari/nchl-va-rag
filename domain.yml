@@ -1,31 +1,67 @@
 version: "3.0"
-
 intents:
   - greet
   - goodbye
   - query_mobile_banking
   - find_nearest_atm
   - find_nearest_branch
+  - calculate_emi
+  - ask_interest_rates
 
 entities:
   - mobile_query
+  - loan_type
+  - tenure
+  - amount
 
 slots:
   query:
     type: text
     mappings:
       - type: from_text
+  loan_type:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: loan_type
+  tenure:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: tenure
+  amount:
+    type: float
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: amount
 
 responses:
   utter_greet:
-    - text: "Hello! I am your Virtual Assistant. How may I assist you with your mobile banking needs today?"
+    - text: "Hello! I am your Virtual Assistant. I can assist you with mobile banking services and EMI calculations. How may I help you today?"
   utter_goodbye:
-    - text: "Goodbye! Have a great day!"
+    - text: "Goodbye! Have a great day! Feel free to come back anytime."
   utter_default:
     - text: "I'm sorry, I didn't understand that. Could you please rephrase?"
   utter_ask_location:
     - text: "To find the nearest ATMs or branches, I need your location. Please allow location access in your browser, or type a specific location (e.g., 'Kathmandu')."
+  utter_ask_loan_type:
+    - text: "Which type of loan would you like to calculate EMI for?"
+  utter_ask_amount:
+    - text: "Please select the loan amount using the slider in the form."
+  utter_ask_tenure:
+    - text: "Please select the tenure for your loan."
+  utter_show_emi_form:
+    - text: "Here's the EMI calculation form for you to fill in."
+      buttons:
+        - title: Open EMI Form
+          payload: /calculate_emi
 
 actions:
   - action_mobile_banking_response
   - action_find_nearest_location
+  - action_show_emi_form
+  - action_calculate_emi
+  - action_show_interest_rates

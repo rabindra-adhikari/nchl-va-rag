@@ -13,7 +13,9 @@ async-timeout==4.0.3
 attrs==22.1.0
 babel==2.17.0
 backports.zoneinfo==0.2.1
+beautifulsoup4==4.13.3
 bidict==0.23.1
+bitsandbytes==0.45.5
 blinker==1.8.2
 boto3==1.37.9
 botocore==1.37.9
@@ -49,6 +51,8 @@ frozenlist==1.5.0
 fsspec==2025.3.0
 future==1.0.0
 gast==0.4.0
+geographiclib==2.0
+geopy==2.4.1
 gitdb==4.0.12
 GitPython==3.1.44
 google-auth==2.38.0
@@ -157,6 +161,7 @@ sklearn-crfsuite==0.3.6
 skops==0.9.0
 slack_sdk==3.34.0
 smmap==5.0.2
+soupsieve==2.6
 SQLAlchemy==1.4.54
 streamlit==1.40.1
 structlog==23.3.0

@@ -19,7 +19,7 @@ class Colors:
 def print_colored(text, color):
     print(f"{color}{text}{Colors.ENDC}")
 
-def run_command(command, name, color):
+def run_command(command, name, color):   
     print_colored(f"Starting {name}...", color)
     try:
         process = subprocess.Popen(
@@ -30,10 +30,8 @@ def run_command(command, name, color):
             universal_newlines=True,
             bufsize=1
         )
-        
         for line in process.stdout:
             print_colored(f"[{name}] {line.strip()}", color)
-            
         process.wait()
         print_colored(f"{name} process ended with code {process.returncode}", color)
         return process
@@ -41,7 +39,6 @@ def run_command(command, name, color):
         print_colored(f"Error starting {name}: {e}", Colors.RED)
         return None
 
-# Store processes for proper cleanup
 processes = []
 
 def signal_handler(sig, frame):
@@ -55,55 +52,42 @@ def signal_handler(sig, frame):
 signal.signal(signal.SIGINT, signal_handler)
 
 def main():
-    # Check if Rasa is installed
     try:
         subprocess.run(["rasa", "--version"], check=True, stdout=subprocess.PIPE)
-    except (subprocess.SubprocessError, FileNotFoundError):
+    except Exception:
         print_colored("Rasa is not installed or not in PATH. Please install Rasa first.", Colors.RED)
         sys.exit(1)
     
-    # Check if Flask is installed
     try:
         subprocess.run(["flask", "--version"], check=True, stdout=subprocess.PIPE)
-    except (subprocess.SubprocessError, FileNotFoundError):
+    except Exception:
         print_colored("Flask is not installed. Installing it now...", Colors.YELLOW)
         subprocess.run([sys.executable, "-m", "pip", "install", "flask"])
     
-    # Start Rasa action server
     action_server = threading.Thread(
         target=run_command,
         args=("rasa run actions", "Action Server", Colors.BLUE)
     )
     action_server.daemon = True
     action_server.start()
-    
-    # Give action server time to start
     time.sleep(2)
     
-    # Start Rasa server
     rasa_server = threading.Thread(
         target=run_command,
         args=("rasa run --enable-api --cors '*'", "Rasa Server", Colors.GREEN)
     )
     rasa_server.daemon = True
     rasa_server.start()
-    
-    # Give Rasa server time to start
     time.sleep(5)
     
-    # Start Flask app
     flask_url = "http://localhost:8501"
     print_colored("Starting Flask frontend...", Colors.YELLOW)
-    print_colored(f"Flask app will be available at: {flask_url}", Colors.YELLOW)
-    
-    # Open browser automatically after a short delay
+    print_colored(f"Flask app will be available at: {flask_url}", Colors.YELLOW) 
     threading.Timer(2, lambda: webbrowser.open(flask_url)).start()
     
-    # Run the Flask app (runs app.py)
     flask_process = run_command("python app.py", "Flask", Colors.YELLOW)
     processes.append(flask_process)
     
-    # Keep the script running
     try:
         while True:
             time.sleep(1)

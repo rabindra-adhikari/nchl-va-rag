@@ -24,3 +24,8 @@ rules:
     steps:
       - intent: find_nearest_branch
       - action: action_find_nearest_location
+
+  - rule: Show EMI form
+    steps:
+      - intent: calculate_emi
+      - action: action_show_emi_form

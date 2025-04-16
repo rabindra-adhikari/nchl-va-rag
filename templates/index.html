@@ -101,40 +101,56 @@
     <!-- Marked.js for Markdown parsing -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
     <script>
         // Function to append a new message to the chat container
         function appendMessage(role, content, custom) {
-            let messageHtml = '';
-            if (role === 'user') {
-                messageHtml = '<div class="message user-message">' +
-                              '<div class="message-content"><p>' + content + '</p></div></div>';
-            } else {
+        let messageHtml = '';
+        if (role === 'user') {
+            messageHtml = '<div class="message user-message">' +
+                        '<div class="message-content"><p>' + content + '</p></div></div>';
+        } else {
+            // Check if the custom payload is of type "form"
+            if (custom && custom.type === 'form') {
+                // Build the assistant message using an iframe to load the EMI form.
                 messageHtml = '<div class="message assistant-message">' +
-                              '<div class="assistant-avatar"><i class="fas fa-robot"></i></div>' +
-                              '<div class="message-content">';
+                            '<div class="assistant-avatar"><i class="fas fa-robot"></i></div>' +
+                            '<div class="message-content">' +
+                            '<p>Please provide your loan details below to calculate your monthly EMI, total interest, and overall payment.</p>' +
+                            '<iframe src="/emi_form" style="width: 100%; height: 372px; border: none; border-radius: 10px;"></iframe>' +
+                            '</div></div>';
+            } else {
+                // Default assistant message processing (including handling for location_map)
+                messageHtml = '<div class="message assistant-message">' +
+                            '<div class="assistant-avatar"><i class="fas fa-robot"></i></div>' +
+                            '<div class="message-content">';
                 // Apply Markdown parsing only if no custom map payload
                 if (!custom || custom.type !== 'location_map') {
                     messageHtml += marked.parse(content);
                 } else {
-                    messageHtml += '<p>' + content + '</p>'; // Keep as plain text for map messages
+                    messageHtml += '<p>' + content + '</p>'; // Plain text for map messages
                 }
                 if (custom && custom.type === 'location_map') {
                     messageHtml += '<div class="location-controls">' +
-                                   '<button class="btn btn-secondary btn-sm me-2 location-btn" onclick="useCurrentLocation(this)">Current Location</button>' +
-                                   '<button class="btn btn-secondary btn-sm location-btn" onclick="enableLocationEditing(this)">Set Location</button>' +
-                                   '</div>' +
-                                   '<div class="location-instruction" style="display: none; font-size: 0.9rem; color: #666; margin-bottom: 10px;">Drag the marker or click on the map to set your location.</div>' +
-                                   '<div class="map-container" data-map=\'' + JSON.stringify(custom) + '\'></div>';
+                                '<button class="btn btn-secondary btn-sm me-2 location-btn" onclick="useCurrentLocation(this)">Current Location</button>' +
+                                '<button class="btn btn-secondary btn-sm location-btn" onclick="enableLocationEditing(this)">Set Location</button>' +
+                                '</div>' +
+                                '<div class="location-instruction" style="display: none; font-size: 0.9rem; color: #666; margin-bottom: 10px;">Drag the marker or click on the map to set your location.</div>' +
+                                '<div class="map-container" data-map=\'' + JSON.stringify(custom) + '\'></div>';
                 }
                 messageHtml += '</div></div>';
             }
-            $("#chatContainer").append(messageHtml);
-            $("#chatContainer").scrollTop($("#chatContainer")[0].scrollHeight);
-    
-            if (custom && custom.type === 'location_map') {
-                initMap(custom, $('.map-container').last()[0]);
-            }
         }
+        $("#chatContainer").append(messageHtml);
+        $("#chatContainer").scrollTop($("#chatContainer")[0].scrollHeight);
+
+        // If the message is for a location map, initialize the map
+        if (custom && custom.type === 'location_map') {
+            initMap(custom, $('.map-container').last()[0]);
+        }
+    }
+
     
         // Initialize Leaflet map (empty initially)
         function initMap(data, container) {
@@ -283,68 +299,83 @@
         }
     
         $(document).ready(function() {
-            $("#chatContainer").scrollTop($("#chatContainer")[0].scrollHeight);
-    
-            $("#chatForm").submit(function(e) {
-                e.preventDefault();
-                const message = $("#userInput").val();
-                if (!message) return;
-    
-                appendMessage('user', message);
-                $("#userInput").val('');
-                $(".example-questions-row").fadeOut(300);
-    
-                let typingHtml = '<div class="message assistant-message" id="typing-indicator">' +
-                                '<div class="assistant-avatar"><i class="fas fa-robot"></i></div>' +
-                                '<div class="message-content"><div class="typing-dots"><span></span><span></span><span></span></div></div></div>';
-                $("#chatContainer").append(typingHtml);
-                $("#chatContainer").scrollTop($("#chatContainer")[0].scrollHeight);
-    
-                sendMessage(message, null);
-            });
-    
-            function sendMessage(message, location) {
-                $.ajax({
-                    url: '/send_message',
-                    type: 'POST',
-                    contentType: 'application/json',
-                    data: JSON.stringify({ message: message, location: location }),
-                    success: function(data) {
-                        $("#typing-indicator").remove();
-                        appendMessage('assistant', data.reply, data.custom);
-                    },
-                    error: function() {
-                        $("#typing-indicator").remove();
-                        appendMessage('assistant', "I'm sorry, I encountered an error. Please try again.");
-                    }
-                });
+        $("#chatContainer").scrollTop($("#chatContainer")[0].scrollHeight);
+
+        // Add event listener for EMI calculation results
+        window.addEventListener('message', function(event) {
+            if (event.data && event.data.type === 'emi_result') {
+                // Remove typing indicator if present
+                $("#typing-indicator").remove();
+
+                let content = event.data.data;
+                if (Array.isArray(content)) {
+                    content = content.map(item => item.text).join('\n');
+                }
+                
+                // Add the EMI result as an assistant message
+                appendMessage('assistant', content, null);
             }
+        });
+        $("#chatForm").submit(function(e) {
+            e.preventDefault();
+            const message = $("#userInput").val();
+            if (!message) return;
+
+            appendMessage('user', message);
+            $("#userInput").val('');
+            $(".example-questions-row").fadeOut(300);
+
+            let typingHtml = '<div class="message assistant-message" id="typing-indicator">' +
+                            '<div class="assistant-avatar"><i class="fas fa-robot"></i></div>' +
+                            '<div class="message-content"><div class="typing-dots"><span></span><span></span><span></span></div></div></div>';
+            $("#chatContainer").append(typingHtml);
+            $("#chatContainer").scrollTop($("#chatContainer")[0].scrollHeight);
+
+            sendMessage(message, null);
+        });
     
-            $(".example-question-box").click(function() {
-                const question = $(this).data("question");
-                if (question) {
-                    $("#userInput").val(question);
-                    $("#chatForm").submit();
+        function sendMessage(message, location) {
+            $.ajax({
+                url: '/send_message',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ message: message, location: location }),
+                success: function(data) {
+                    $("#typing-indicator").remove();
+                    appendMessage('assistant', data.reply, data.custom);
+                },
+                error: function() {
+                    $("#typing-indicator").remove();
+                    appendMessage('assistant', "I'm sorry, I encountered an error. Please try again.");
                 }
             });
+        }
     
-            $("#clearBtn").click(function() {
-                $.ajax({
-                    url: '/clear',
-                    type: 'POST',
-                    success: function() {
-                        location.reload();
-                    }
-                });
-            });
-    
-            $('.map-container').each(function() {
-                const mapData = $(this).data('map');
-                if (mapData) {
-                    initMap(mapData, this);
+        $(".example-question-box").click(function() {
+            const question = $(this).data("question");
+            if (question) {
+                $("#userInput").val(question);
+                $("#chatForm").submit();
+            }
+        });
+
+        $("#clearBtn").click(function() {
+            $.ajax({
+                url: '/clear',
+                type: 'POST',
+                success: function() {
+                    location.reload();
                 }
             });
         });
+    
+        $('.map-container').each(function() {
+            const mapData = $(this).data('map');
+            if (mapData) {
+                initMap(mapData, this);
+            }
+        });
+    });
     </script>
 </body>
 </html>

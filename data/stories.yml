@@ -26,3 +26,18 @@ stories:
       - action: action_mobile_banking_response
       - intent: goodbye
       - action: utter_goodbye
+
+  - story: Show EMI form conversation
+    steps:
+      - intent: calculate_emi
+      - action: action_show_emi_form
+
+  - story: Interest rates inquiry
+    steps:
+      - intent: ask_interest_rates
+      - action: action_show_interest_rates
+
+  - story: EMI greeting conversation
+    steps:
+      - intent: greet
+      - action: utter_greet
